@@ -73,8 +73,15 @@ body{
 	margin: auto;
 }
 
+h1{
+    font-family: Andantino_script;
+    font-size: 30pt;
+    padding-bottom: 10px;
+    text-align: center;
+}
 
 header{
+    
     margin-left: 50px;
     width: 1024px;
     height: 559px;
@@ -108,9 +115,29 @@ header{
 }
 /* Герб */
 #gerb{
+    position:relative; /*Положение элемента устанавливается относительно его исходного места*/
     float: right;
     padding-top: 56px;
     padding-right: 105px;
+}
+
+/*Прокрутка до якоря*/
+.idTop img{
+    height: 80px;
+    
+}
+a.idTop {
+    position: fixed; /*позиционирование кнопки фиксированное*/
+    z-index: 9999; /*отображаем поверх всех элементов*/
+    bottom: 0%; /*положение снизу*/
+    right: 0%; /*положение справа*/
+    opacity: .6; /*прозрачность*/
+    color: #fff; /*цвет текста*/
+    padding: 10px; /*внутренние отступы*/
+    margin: 5px 15px 15px 5px; /*внешние отступы*/
+}
+a.idTop:hover {
+ opacity: 1;
 }
 
 /* Главная навигация */
@@ -121,6 +148,7 @@ nav{
 }
 
 .menu-main {
+    position:inherit; /*Наследуемое позиционирование*/
     margin: 0;
     padding: 0;
     list-style-type: none;
@@ -287,3 +315,45 @@ menu{
     border-radius: 20px 5px;
     background-color: #ea2127;
 }
+
+
+
+
+/*СТИЛЬ ТАБЛИЦЫ НА СТРАНИЦЕ ИСТОРИЯ*/
+table {
+    border-spacing: 0 10px;
+    font-family: 'Times New Roman', sans-serif;
+    font-weight: bold;
+}
+th {
+    padding: 10px 20px;
+    background: #089a37;
+    color: #fff;
+    border-right: 2px solid; 
+    font-size: 0.9em;
+}
+th:first-child {
+    text-align: left;
+}
+th:last-child {
+    border-right: none;
+}
+td {
+    vertical-align: middle;
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+    border: 2px solid #089a37;
+}
+td:first-child {
+    width: 80px;
+    border-left: 2px solid #089a37;
+    border-right: none;
+}
+td:nth-child(2){
+    text-align: left;
+}
+td:nth-child(3){
+    text-align: justify;
+}
+/*КОНЕЦ СТИЛЯ ТАБЛИЦЫ*/
