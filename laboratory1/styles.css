@@ -1,0 +1,289 @@
+/* СБРОС СТИЛЕЙ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0; /* обнуляем внешние отступы */
+	padding: 0; /* обнуляем внутренние отступы */
+	border: 0; /* убираем бордюры */
+	outline: 0; /* убираем контуры */
+	font-size: 100%; /* задаем базовый размер шрифта, значение по умолчанию = 16px */
+	vertical-align: baseline; /* устанавливаем базовое вертикальное выравнивание */
+	background: transparent; /* устанавливаем фон прозрачным */
+}
+body {
+	line-height: 1; /* устанавливаем базовую высоту */
+    margin: auto; /*убираем отступы*/
+}
+ol, ul {
+	list-style: none; /* убираем маркеры для нумерованных и обычных списков */
+}
+blockquote, q {
+	quotes: none; /* убираем кавычки для цитат */
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: ''; /* убираем */
+	content: none; /* и скрываем генерируемое содержимое */
+}
+:focus {
+	outline: 0; /* убираем контуры вокруг ссылок при фокусе */
+}
+ins {
+	text-decoration: none; /* убираем подчеркивание для вставленного текста */
+}
+del {
+	text-decoration: line-through; /* убираем перечеркивание для удаленного текста */
+}
+table {
+	border-collapse: collapse; /* убираем рамки двойной толщины */
+	border-spacing: 0; /* убираем расстояние между ячейками */
+}
+/* КОНЕЦ */
+
+
+/*Убираем декорации у ссылки*/
+a {
+    text-decoration: none;
+}
+
+/* Шрифты */
+@font-face{
+    font-family:Andantino_script;
+    src:url(css/Andantino_script.ttf);
+}
+
+@font-face{
+    font-family:Tahoma;
+    src:url(css/tahoma.ttf);
+}
+
+body{
+    background-color: #ebe8e8;
+}
+
+/* Выравниваем блоки по центру и объединяем их*/
+#wrapper {
+	width: 1124px;
+	margin: auto;
+}
+
+
+header{
+    margin-left: 50px;
+    width: 1024px;
+    height: 559px;
+    background-image: url(images/fon.png);
+    background-repeat: no-repeat;
+    
+}
+/*Название на шапке */
+#gorod{
+    width: 400px;
+    height: 120px;
+    float: left;
+    padding: 108px 0px 0px 83px;
+}
+
+/* Название города */
+#imaG{
+    font-family: Andantino_script;
+	color:#FFF;
+    font-size: 60pt;
+}
+
+/* Подпись города */
+#podposG{
+    font-family: Tahoma;
+    color:#ea2127;
+    font-size: 22pt;
+    padding-left: 10px;
+    
+    
+}
+/* Герб */
+#gerb{
+    float: right;
+    padding-top: 56px;
+    padding-right: 105px;
+}
+
+/* Главная навигация */
+nav{
+    width: 1124px;
+    height: 71px;
+    background-color: #089a37;
+}
+
+.menu-main {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    width: 1124px;
+    text-align: center;
+    background-color: #089a37;
+}
+.menu-main li { display: inline; }
+
+.menu-main a {
+    font-family: Andantino_script;
+    font-size: 26pt;
+    color: #fff;
+    padding: 22px 10px;
+    text-decoration: none;
+    display: inline-block;
+    width: 200px;
+}
+
+/*При наведении на меню*/
+.menu-main a:hover {
+    border-radius: 20px 5px;
+    background-color: #ea2127;
+}
+
+/*Подчеркивание текущей страницы*/
+#menu_naxogd{
+    text-decoration: underline;
+}
+
+/*Боковая колонка сайта*/
+aside{
+    margin: 50px 0px 0px 50px;
+    width: 314px;
+    float: left;
+}
+
+.info{
+    padding: 10px 0px 10px 0px;
+    font-family: Andantino_script;
+    font-size: 26pt;
+    color: #fff;
+    height: 419px;
+    width: 314px;
+    margin: 10px 0 30px 0;
+    background-image: url(images/info.png);
+    background-repeat: no-repeat;
+}
+.info p{
+    padding: 0px 10px 0px 15px;
+}
+
+#info-zagolovok{
+    padding: 0 0 20px 0;
+    text-align: center;
+   text-decoration: underline;
+}
+.p-left{
+    font-family: Tahoma;
+    font-size: 25px;
+    text-align: right;
+}
+
+.prazbnik{
+    padding: 10px 0px 10px 0px;
+    font-family: Andantino_script;
+    font-size: 26pt;
+    color: #fff;
+    height: 419px;
+    width: 314px;
+    margin: 10px 0 30px 0;
+    background-image: url(images/den.png);
+    background-repeat: no-repeat;
+}
+
+.prazbnik p{
+    padding: 15px 10px 0px 10px;
+}
+
+.p-opisania{
+    text-align: inherit;
+    font-size: 30px;
+}
+
+/*Основыне посты на странице*/
+section{
+    width: 678px;
+    padding: 60px 0 0 40px;
+    overflow: hidden;
+}
+
+
+.post-tema{
+    margin: 0 0 25px 0;
+    padding-bottom: 10px;
+    width: 670px;
+    background-color: #fff;
+    
+}
+
+.post-tema-zagolovok{
+    padding: 10px 0 10px 30px;
+    background-color: #089a37;
+}
+
+.post-tema-zagolovok a{
+    text-decoration: none;
+    font-family: Andantino_script;
+    font-size: 25pt;
+    color: #ffffff;
+}
+
+.post-tema-osnova{
+    text-align: center;
+}
+
+.post-tema-osnova img{
+    margin: 10px 0 10px 0;
+    height: 320px;
+}
+
+.post-time{
+    padding-left: 10px;
+    color: #ea2127;
+}
+
+/* Подвал сайта*/
+footer{
+    width: 1024px;
+    height: 80px;
+    margin: auto;
+    background-color: #089a37;
+}
+
+footer p{
+    color: #fff;
+    text-align: center;
+}
+
+/* Меню в подвале сайта*/
+menu{
+    padding-left: 0px;
+}
+
+.footer-main{
+    margin:0 auto;
+}
+
+.footer-main { width: 400px; }
+
+.footer-main li {
+    display:  inline-block;  /* Строчно-блочные элементы */
+    margin-right: 1px; /* Расстояние между пунктами меню */
+}
+
+.footer-main a {
+    color: #fff; /* Цвет ссылок */
+    display: block; /* Блочный элемент */
+    padding: 10px 5px; /* Поля вокруг текста */
+}
+
+/*При наведении на меню*/
+.footer-main a:hover {
+    border-radius: 20px 5px;
+    background-color: #ea2127;
+}

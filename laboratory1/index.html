@@ -1,10 +1,136 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-<title>Page Title</title>
-</head>
-<body>
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
-</body>
-</html>
+    <!-- Шапка сайта -->
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        
+        <title>Главная страница</title>
+        
+        <!-- Подключаем таблицу стилей и шрифты -->
+        <link rel="stylesheet" href="styles.css" type="text/css">
+        
+        <!--Указываем поддержку браузера для HTM5[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    </head>   
+    
+    <body>
+        <div id="wrapper">
+            <!-- Шапка сайта -->
+            <header>
+                <div id="gorod">
+                    <a id="imaG">Дебальцево</a>
+                    <p id="podposG"> Город воинской славы</p>
+                </div>
+                <div id="gerb"><a href="index.html"><img src="images/gerb.png" alt="EROR Gelb"></a></div>
+            </header>
+            
+            <!-- Навигация -->
+            <nav>
+                <ul class="menu-main">
+                    <li><a href="" id="menu_naxogd">Главная</a></li>
+                    <li><a href="">История</a></li>
+                    <li><a href="">Культура</a></li>
+                    <li><a href="">Инфраструктура</a></li>
+                    <li><a href="">Связь</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Блок боковой колонки -->
+            <aside>
+                <div class="info"><p id="info-zagolovok" >Информация</p>
+                    <p>Время:</p>
+                    <p class="p-left"><time>12:36</time></p>
+                    <p>Дата:</p>
+                    <p class="p-left"><time>30.09.2018</time></p>
+                    <p>Погода:</p>
+                    <p class="p-left">+23&deg;</p>
+                </div>
+                <div class="prazbnik">
+                    <p id="info-zagolovok">Сегодня празднуют!</p>
+                    <p class="p-left">День машиностроителя</p>
+                    <p class="p-opisania">Машиностроение – основа экономики страны. Специалистам отрасли посвящен профессиональный праздник. Событие справляют сотрудники предприятий машиностроения: инженеры, проектировщики, рабочие.</p>
+                </div>
+            </aside>
+            
+            
+            <!-- Основной блок -->
+            <section>
+                <!-- Новость 1 -->
+                <div class="post-tema">
+                    <div class="post-tema-zagolovok">
+                        <a href=""> В августе прошел фестиваль красок</a>
+                    </div>
+                    <div class="post-tema-osnova">
+                        <img src="images/post1.jpg" alt="">
+                        <p>ФЕСТИВАЛЬ КРАСОК, " Сделаем Мир Добрее ".</p>
+                    </div>
+                        <time class="post-time">25.08.2018</time>
+                </div>
+                 <!-- Новость 2 -->
+                <div class="post-tema">
+                    <div class="post-tema-zagolovok">
+                        <a href=""> Красота нашего города</a>
+                    </div>
+                    <div class="post-tema-osnova">
+                        <img src="images/post2.jpg" alt="">
+                        <p>Горожане улучшают город своими руками</p>
+                    </div>
+                        <time class="post-time">10.06.2018</time>
+                </div>
+                <!-- Новость 3 -->
+                <div class="post-tema">
+                    <div class="post-tema-zagolovok">
+                        <a href=""> Годовщина Народной республики </a>
+                    </div>
+                    <div class="post-tema-osnova">
+                        <img src="images/post3.jpg" alt="">
+                        <p>Дебальцево так же приняло участие в торжественном шествие в честь третьей годовщины Референдума</p>
+                    </div>
+                        <time class="post-time">11.05.2017</time>
+                </div>
+                <!-- Новость 4 -->
+                <div class="post-tema">
+                    <div class="post-tema-zagolovok">
+                        <a href=""> 9 мая </a>
+                    </div>
+                    <div class="post-tema-osnova">
+                        <img src="images/post4.jpg" alt="">
+                        <p>9 мая г.Дебальцево</p>
+                    </div>
+                        <time class="post-time">09.05.2017</time>
+                </div>
+                <!-- Новость 5 -->
+                <div class="post-tema">
+                    <div class="post-tema-zagolovok">
+                        <a href=""> Спортакиада школьников </a>
+                    </div>
+                    <div class="post-tema-osnova">
+                        <img src="images/post5.jpg" alt="">
+                        <p>Cпортакиада школьников в Дебальцево</p>
+                    </div>
+                        <time class="post-time">19.01.2017</time>
+                </div>
+                
+            </section>
+        </div>
+        
+        <!-- Подвал сайта -->
+        <footer>
+            <!-- Дублируем меню сайта -->
+            <menu>
+                <ul class="footer-main">
+                    <li><a href="">Главная</a></li>
+                    <li><a href="">История</a></li>
+                    <li><a href="">Культура</a></li>
+                    <li><a href="">Инфраструктура</a></li>
+                    <li><a href="">Связь</a></li>
+                </ul>
+            </menu>
+            <p>&copy; Дебальцево 2018</p>
+        </footer>
+        
+    
+    </body>    
+</html>
