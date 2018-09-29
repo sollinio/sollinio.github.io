@@ -357,3 +357,96 @@ td:nth-child(3){
     text-align: justify;
 }
 /*КОНЕЦ СТИЛЯ ТАБЛИЦЫ*/
+
+/*СТИЛЬ ДЛЯ СВЯЗИ*/
+
+#p-svaz{
+   text-decoration: none;
+    font-family: Andantino_script;
+    font-size: 25pt;
+    color: #ffffff;  
+}
+
+.formcommun{
+    height: 850px;
+}
+
+.formcommun ul{
+     width:600px;
+    list-style-type:none;
+    list-style-position:outside;
+    margin:0 auto;
+}
+
+.formcommun li{
+    font-size: 18px;
+    padding:12px;
+    border-bottom:1px solid #eee;
+    position:relative;
+}
+
+/*Ободки сверху и снизу*/
+.formcommun li:first-child, .formcommun li:last-child {
+    border-bottom:1px solid #777;
+}
+
+.required_notification {
+    color:#d45252;
+    margin: -8px 0 0 0;
+    display:inline;
+    float:right;
+}
+
+.formcommun label {
+    width:150px;
+    margin-top: 3px;
+    display:inline-block;
+    float:left;
+    padding:3px;
+}
+.formcommun input {
+    height:20px;
+    width:220px;
+    padding:5px 8px;
+}
+.formcommun textarea {padding:8px; width:300px;}
+.formcommun button {margin-left:156px;}
+
+
+.formcommun input, .formcommun textarea {
+    border:1px solid #aaa;
+    box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+    border-radius:2px;
+}
+.formcommun input:focus, .formcommun textarea:focus {
+    background: #fff;
+    border:1px solid #555;
+    box-shadow: 0 0 3px #aaa;
+}
+
+/* Cтиль кнопки */
+button.submit {
+    font-family: Andantino_script;
+    font-size: 30px;
+    background-color: #089a37;
+    border: 1px solid #089a37;
+    border-radius: 3px;
+    color: #fff;
+    padding: 10px 40px;
+    text-align: center;
+    text-shadow: 0 -1px 0 #089a37;
+}
+button.submit:hover {
+    opacity:.85;
+    cursor: pointer;
+}
+button.submit:active {
+    border: 1px solid #20911e;
+}
+
+
+.p-forma{
+    padding: 10px 0 10px 0;
+    font-size: 25px;
+}
+

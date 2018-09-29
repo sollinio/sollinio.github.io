@@ -5,7 +5,7 @@
         <meta http-equiv="Content-type" content="text/html; charset=utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=Edge">
         
-        <title>Главная страница</title>
+        <title>Связь</title>
         
         <!-- Подключаем таблицу стилей и шрифты -->
         <link rel="stylesheet" href="styles.css" type="text/css">
@@ -29,11 +29,11 @@
             <!-- Навигация -->
             <nav>
                 <ul class="menu-main">
-                    <li><a href="index.html" id="menu_naxogd">Главная</a></li>
+                    <li><a href="index.html">Главная</a></li>
                     <li><a href="history.html">История</a></li>
                     <li><a href="сulture.html">Культура</a></li>
                     <li><a href="infrastructure.html">Инфраструктура</a></li>
-                    <li><a href="commun.html">Связь</a></li>
+                    <li><a href="commun.html" id="menu_naxogd">Связь</a></li>
                 </ul>
             </nav>
             
@@ -57,62 +57,65 @@
             
             <!-- Основной блок -->
             <section>
-                <!-- Новость 1 -->
+                <!-- Обратная связь -->
                 <div class="post-tema">
                     <div class="post-tema-zagolovok">
-                        <a href=""> В августе прошел фестиваль красок</a>
+                        <p id="p-svaz">Обратная связь с администрацией сайта</p>
                     </div>
                     <div class="post-tema-osnova">
-                        <img src="images/post1.jpg" alt="">
-                        <p>ФЕСТИВАЛЬ КРАСОК, " Сделаем Мир Добрее ".</p>
+                        <!-- Наша форма -->
+                        <form class="formcommun" action="" method="GET" name="callback">
+                            <ul>
+                                 <li>
+                                     <p class="p-forma">Свяжитесь с нами!</p>
+                                     <span class="required_notification">* Поля обязательные для заполнения</span>
+                                </li>
+                                <li>
+                                    <label for="Sname">Фамилия:</label><br>
+                                    <input type="text" name="second_name" id="Sname">
+                                </li>
+                                <li>
+                                    <label for="Fname">Имя:</label><br>
+                                    <input type="text" name="first_name" id="Fname" >
+                                </li>
+                                <li>
+                                    <label for="SrName">Отчество:</label><br>
+                                    <input type="text" name="sur_name" id="SrName" >
+                                </li>
+                                <li>
+                                    <label for="email">Email:</label><br>
+                                    <input type="email" name="email" id="email" >
+                                </li>
+                                <li>
+                                    <label for="phone">Телефон:</label><br>
+                                    <input type="tel" name="phone" id="phone">
+                                </li>
+                                <li>
+                                    <label for="cty">Город:</label><br>
+                                    <input type="text" name="city" id="cty">
+                                </li>
+                                <li>
+                                    <label>Выберите тему письма:</label><br>
+                                    <select name="reason">
+                                        <option selected>Техничиские проблемы</option>
+                                        <option >Неправильная информация</option>
+                                        <option >Другое</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <label>Опишите причину обращения:</label><br>
+                                    <textarea name="point" cols="40" rows="6" >
+                                    </textarea>
+                                </li>
+                                <li>
+                                    <button class="submit" type="submit">Отправить</button>
+                                </li>
+                                
+                            </ul>
+                        </form>
+                       
                     </div>
-                        <time class="post-time">25.08.2018</time>
                 </div>
-                 <!-- Новость 2 -->
-                <div class="post-tema">
-                    <div class="post-tema-zagolovok">
-                        <a href=""> Красота нашего города</a>
-                    </div>
-                    <div class="post-tema-osnova">
-                        <img src="images/post2.jpg" alt="">
-                        <p>Горожане улучшают город своими руками</p>
-                    </div>
-                        <time class="post-time">10.06.2018</time>
-                </div>
-                <!-- Новость 3 -->
-                <div class="post-tema">
-                    <div class="post-tema-zagolovok">
-                        <a href=""> Годовщина Народной республики </a>
-                    </div>
-                    <div class="post-tema-osnova">
-                        <img src="images/post3.jpg" alt="">
-                        <p>Дебальцево так же приняло участие в торжественном шествие в честь третьей годовщины Референдума</p>
-                    </div>
-                        <time class="post-time">11.05.2017</time>
-                </div>
-                <!-- Новость 4 -->
-                <div class="post-tema">
-                    <div class="post-tema-zagolovok">
-                        <a href=""> 9 мая </a>
-                    </div>
-                    <div class="post-tema-osnova">
-                        <img src="images/post4.jpg" alt="">
-                        <p>9 мая г.Дебальцево</p>
-                    </div>
-                        <time class="post-time">09.05.2017</time>
-                </div>
-                <!-- Новость 5 -->
-                <div class="post-tema">
-                    <div class="post-tema-zagolovok">
-                        <a href=""> Спортакиада школьников </a>
-                    </div>
-                    <div class="post-tema-osnova">
-                        <img src="images/post5.jpg" alt="">
-                        <p>Cпортакиада школьников в Дебальцево</p>
-                    </div>
-                        <time class="post-time">19.01.2017</time>
-                </div>
-                
             </section>
         </div>
         
