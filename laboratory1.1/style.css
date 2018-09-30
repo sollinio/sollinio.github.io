@@ -1,0 +1,710 @@
+html {
+  line-height: 1;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#wrapper {
+  text-align: center;
+  margin-top: 40px;
+}
+
+/*ПЕРВЫЙ*/
+#eric {
+  position: relative;
+  display: inline-block;
+  height: 190px;
+  width: 185px;
+}
+#eric:after { /*БУБОНЧИК*/
+  content: " ";
+  border-radius: 70% 30% 80% 80%;
+  position: absolute;
+  top: 15px;
+  left: 75px;
+  width: 40px;
+  height: 20px;
+  background: #efe309;
+  z-index: 99;
+}
+#eric .face { /*ЛИЦО*/
+  border-radius: 50%;
+  position: absolute;
+  top: 24px;
+  left: 26px;
+  width: 132px;
+  height: 106px;
+  overflow: hidden;
+  background: #f8d3aa;
+  z-index: 15;
+}
+#eric .face .hat { /*ШАПОЧКА*/
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 132px;
+  height: 78px;
+  background: #47c3b9;
+}
+#eric .face .hat:before { /*ОБОДОК ШАПКИ*/
+  content: " ";
+  border-radius: 65% 40%;
+  position: absolute;
+  top: 25px;
+  left: -3px;
+  width: 134px;
+  height: 48px;
+  background: #f0e50c;
+}
+#eric .face .hat:after { /*ЧАСТЬ ЛИЦА*/
+  content: " ";
+  border-radius: 65% 40%;
+  position: absolute;
+  top: 29px;
+  left: -6px;
+  width: 137px;
+  height: 52px;
+  background: #f8d3aa;
+}
+#eric .face .eye-left, #eric .face .eye-right { /*ГЛАЗА*/
+  border-radius: 65% 50%;
+  position: absolute;
+  top: 35px;
+  left: 36px;
+  width: 32px;
+  height: 37px;
+  background: #ffffff;
+}
+#eric .face .eye-left:after, #eric .face .eye-right:after { /*ЗРАЧКИ*/
+  border-radius: 50%;
+  content: " ";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  height: 3px;
+  width: 3px;
+  background: #000000;
+}
+#eric .face .eye-right { /*ПРАВЫЙ ГЛАЗ*/
+  border-radius: 50% 65%;
+  left: 69px;
+}
+#eric .face .smile { /*УЛЫБКА*/
+  box-shadow: 0 1px 0 black;
+  position: absolute;
+  top: 79px;
+  left: 60px;
+  width: 20px;
+  height: 8px;
+}
+#eric .body { /*ТЕЛО*/
+  border-radius: 50% 50% 33% 33%;
+  position: absolute;
+  top: 80px;
+  left: 13px;
+  height: 90px;
+  width: 160px;
+  background: #c50d31;
+  z-index: 10;
+}
+#eric .body .zipper { /*Молния*/
+  position: absolute;
+  top: 48px;
+  left: 86px;
+  width: 1px;
+  height: 42px;
+  background: #000000;
+}
+#eric .body .button-1, #eric .body .button-2, #eric .body .button-3 { /*ПУГОВИЦЫ*/
+  border-radius: 50%;
+  position: absolute;
+  top: 50px;
+  left: 82px;
+  height: 4px;
+  width: 2px;
+  background: #000000;
+}
+#eric .body .button-2 { /*ПОЗИЦИЯ ВТОРОЙ ПУГОВИЦЫ*/
+  top: 67px;
+}
+#eric .body .button-3 { /*ПОЗИЦИЯ ТРЕТЬЕЙ ПУГОВИЦЫ*/
+  top: 82px;
+}
+#eric .body .hand-left { /*ЛЕВАЯ РУКАВИЦА*/
+  border-radius: 60% 160% 50% 100%;
+  position: absolute;
+  top: 38px;
+  left: -11px;
+  width: 29px;
+  height: 22px;
+  background: #efe309;
+  z-index: 10;
+}
+#eric .body .hand-right { /*ПРАВАЯ РУКАВИЦА*/
+  border-radius: 60% 50% 50% 70%;
+  position: absolute;
+  top: 35px;
+  left: 140px;
+  width: 29px;
+  height: 25px;
+  background: #efe309;
+  z-index: 10;
+}
+#eric .body .hand-right:before { /*ПАЛЕЦ ОТ РУКАВИЦЫ*/
+  border-radius: 100% 28%;
+  content: " ";
+  position: absolute;
+  top: 5px;
+  left: -5px;
+  width: 29px;
+  height: 18px;
+  background: #efe309;
+}
+#eric .legs { /*ШТАНЫ*/
+  border-radius: 0 0 10px 10px/37px;
+  position: absolute;
+  left: 22px;
+  top: 154px;
+  width: 140px;
+  height: 23px;
+  background: #603715;
+  z-index: 5;
+}
+#eric .legs .foot-left, #eric .legs .foot-right { /*ОБУВЬ*/
+  border-radius: 50% 50% 0 0/7px;
+  position: absolute;
+  top: 18px;
+  left: 2px;
+  width: 70px;
+  height: 8px;
+  background: #000000;
+  z-index: 5;
+}
+#eric .legs .foot-right { /*ПРАВАЯ НОГА*/
+  left: 69px;
+}
+/*КОНЕЦ ПЕРВОГО*/
+
+/*ВТОРОЙ*/
+#kyle {
+  position: relative;
+  display: inline-block;
+  height: 190px;
+  width: 140px;
+}
+#kyle .face { /*ЛИЦР*/
+  border-radius: 50%;
+  position: absolute;
+  top: 18px;
+  left: 15px;
+  width: 110px;
+  height: 110px;
+  background: #f9d2a5;
+  z-index: 15;
+}
+#kyle .face .hat { /*ВЕРХ ШАПКИ*/
+  border-radius: 10px 10px 0 0;
+  position: absolute;
+  top: -3px;
+  left: 4px;
+  width: 104px;
+  height: 47px;
+  border: solid 10px #3dbc00;
+  border-top-width: 18px;
+  border-bottom-width: 0;
+  background: #028b25;
+  z-index: 5;
+}
+#kyle .face .hat:before { /*ЛЕВОЕ УШКО ШАПКИ*/
+  border-radius: 300% 70%;
+  content: " ";
+  position: absolute;
+  top: 17px;
+  left: -26px;
+  width: 24px;
+  height: 50px;
+  background: #3dbc00;
+}
+#kyle .face .hat:after { /*ПРАВОЕ УШКО ШАПКИ*/
+  border-radius: 70% 300%;
+  content: " ";
+  position: absolute;
+  top: 24px;
+  left: 84px;
+  width: 24px;
+  height: 50px;
+  background: #3dbc00;
+}
+#kyle .face .eye-left, #kyle .face .eye-right { /*ГЛАЗА*/
+  border-radius: 65% 50%;
+  position: absolute;
+  top: 40px;
+  left: 22px;
+  width: 32px;
+  height: 37px;
+  background: #ffffff;
+}
+#kyle .face .eye-left:after, #kyle .face .eye-right:after { /*ЗРАЧКИ*/
+  border-radius: 50%;
+  content: " ";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  height: 3px;
+  width: 3px;
+  background: #000000;
+}
+#kyle .face .eye-right { /*ПРАВЫЙ ГЛАЗ*/
+  border-radius: 50% 65%;
+  left: 55px;
+}
+#kyle .face .smile { /*УЛЫБКА*/
+  box-shadow: 0 1px 0 black;
+  position: absolute;
+  top: 87px;
+  left: 50px;
+  width: 15px;
+  height: 8px;
+}
+#kyle .body { /*ТЕЛО*/
+  border-radius: 50% 50% 33% 33%/100px 100px 17px 17px;
+  position: absolute;
+  top: 98px;
+  left: 19px;
+  height: 72px;
+  width: 100px;
+  background: #e95000;
+  z-index: 10;
+}
+#kyle .body:before { /*ОБОДОК КУРТКИ*/
+  border-radius: 50%;
+  content: " ";
+  position: absolute;
+  top: -10px;
+  left: 12px;
+  width: 78px;
+  height: 31px;
+  border-bottom: solid 13px #3abe05;
+}
+
+#kyle .body .zipper { /*МОЛНИЯ*/
+  position: absolute;
+  top: 27px;
+  left: 49px;
+  width: 1px;
+  height: 45px;
+  background: #000000;
+}
+
+#kyle .body .button-1, #kyle .body .button-2, #kyle .body .button-3 { /*ПУГОВИЦЫ*/
+  border-radius: 50%;
+  position: absolute;
+  top: 37px;
+  left: 44px;
+  height: 4px;
+  width: 2px;
+  background: #000000;
+}
+#kyle .body .button-2 { /*ВТОРАЯ ПУГОВИЦА*/
+  top: 51px;
+}
+#kyle .body .button-3 { /*ТРЕТЬЯ ПУГОВИЦА*/
+  top: 62px;
+}
+#kyle .body .hand-left { /*ЛЕВАЯ ВАРЕЖКА*/
+  border-radius: 20% 20% 50% 50%;
+  position: absolute;
+  top: 42px;
+  left: -6px;
+  width: 20px;
+  height: 20px;
+  background: #54db10;
+  z-index: 10;
+}
+#kyle .body .hand-right { /*ПРАВАЯ ВАРЕЖКА*/
+  border-radius: 20% 20% 50% 50%;
+  position: absolute;
+  top: 45px;
+  left: 83px;
+  width: 20px;
+  height: 20px;
+  background: #54db10;
+  z-index: 10;
+}
+
+#kyle .legs { /*ШТАНЫ*/
+  border-radius: 44px 44px 0 0;
+  position: absolute;
+  left: 32px;
+  top: 154px;
+  width: 75px;
+  height: 25px;
+  background: #217552;
+  z-index: 5;
+}
+#kyle .legs .foot-left, #kyle .legs .foot-right { /*ОБУВЬ*/
+  border-radius: 50% 50% 0 0/7px;
+  position: absolute;
+  top: 21px;
+  left: -5px;
+  width: 45px;
+  height: 5px;
+  background: #21241e;
+  z-index: 5;
+}
+#kyle .legs .foot-right { /*ПРАВАЯ ОБУВЬ*/
+  left: 33px;
+}
+
+/*КОНЕЦ ВТОРОГО*/
+
+
+/*ТРЕТИЙ*/
+#stan {
+  position: relative;
+  display: inline-block;
+  height: 190px;
+  width: 125px;
+}
+#stan:after { /*БУБОНЧИК*/
+  content: " ";
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  left: 45px;
+  width: 30px;
+  height: 23px;
+  background: #b60a26;
+  z-index: 99;
+}
+#stan .face { /*ЛИЦО*/
+  border-radius: 50%;
+  position: absolute;
+  top: 18px;
+  left: 6px;
+  width: 110px;
+  height: 112px;
+  overflow: hidden;
+  background: #f9d1ac;
+  z-index: 15;
+}
+#stan .face .hat { /*ШАПКА*/
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 112px;
+  height: 78px;
+  background: #50559a;
+}
+#stan .face .hat:before { /*ОБОДОК*/
+  content: " ";
+  border-radius: 50% 70%;
+  position: absolute;
+  top: 32px;
+  left: -3px;
+  width: 134px;
+  height: 48px;
+  background: #b60a26;
+}
+#stan .face .hat:after { /*ОБОДОК для лица*/
+  content: " ";
+  border-radius: 50% 70%;
+  position: absolute;
+  top: 43px;
+  left: -5px;
+  width: 137px;
+  height: 42px;
+  background: #f9d1ac;
+}
+#stan .face .eye-left, #stan .face .eye-right { /*ГЛАЗА*/
+  border-radius: 65% 50%;
+  position: absolute;
+  top: 45px;
+  left: 26px;
+  width: 31px;
+  height: 36px;
+  background: #ffffff;
+}
+#stan .face .eye-left:after, #stan .face .eye-right:after { /*ЗРАЧКИ*/
+  border-radius: 50%;
+  content: " ";
+  position: absolute;
+  top: 13px;
+  left: 15px;
+  height: 3px;
+  width: 3px;
+  background: #000000;
+}
+#stan .face .eye-right { /*ПРАВЫЙ ГЛАЗ*/
+  border-radius: 50% 65%;
+  left: 58px;
+}
+#stan .face .smile { /*УЛЫБКА*/
+  box-shadow: 0 1px 0 black;
+  position: absolute;
+  top: 89px;
+  left: 48px;
+  width: 18px;
+  height: 8px;
+}
+#stan .body { /*КУРТОЧКА*/
+  border-radius: 50% 50% 33% 33%/100px 100px 17px 17px;
+  position: absolute;
+  top: 99px;
+  left: 10px;
+  height: 70px;
+  width: 100px;
+  background: #8f5a46;
+  z-index: 10;
+}
+#stan .body .zipper { /*ЗАМОК*/
+  position: absolute;
+  top: 27px;
+  left: 49px;
+  width: 1px;
+  height: 42px;
+  background: #000000;
+}
+#stan .body .button-1, #stan .body .button-2, #stan .body .button-3 { /*ПУГОВИЦЫ*/
+  border-radius: 50%;
+  position: absolute;
+  top: 37px;
+  left: 44px;
+  height: 4px;
+  width: 2px;
+  background: #000000;
+}
+#stan .body .button-2 { /*ВТОРАЯ ПУГОВИЦА*/
+  top: 51px;
+}
+#stan .body .button-3 { /*ТРЕТЬЯ ПУГОВИЦА*/
+  top: 62px;
+}
+#stan .body .hand-left { /*ЛЕВАЯ РУКАВИЦА*/
+  border-radius: 20% 20% 50% 30%;
+  position: absolute;
+  top: 42px;
+  left: -6px;
+  width: 20px;
+  height: 20px;
+  background: #c80134;
+  z-index: 10;
+}
+#stan .body .hand-right { /*ПРАВАЯ РУКАВИЦА*/
+  border-radius: 20% 20% 30% 50%;
+  position: absolute;
+  top: 45px;
+  left: 83px;
+  width: 20px;
+  height: 20px;
+  background: #c80134;
+  z-index: 10;
+}
+#stan .legs {
+  border-radius: 44px 44px 0 0;
+  position: absolute;
+  left: 22px;
+  top: 154px;
+  width: 80px;
+  height: 25px;
+  background: #4d5798;
+  z-index: 5;
+}
+#stan .legs .foot-left, #stan .legs .foot-right {  /*НОГИ*/
+  border-radius: 50% 50% 0 0/7px;
+  position: absolute;
+  top: 21px;
+  left: -8px;
+  width: 48px;
+  height: 5px;
+  background: #000000;
+  z-index: 5;
+}
+#stan .legs .foot-right { /*ПРАВАЯ НОГА*/
+  left: 36px;
+}
+/*КОНЕЦ ТРЕТЬЕГО*/
+
+/*ЧЕТВЕРТЫЙ*/
+#kenny {
+  position: relative;
+  display: inline-block;
+  height: 190px;
+  width: 125px;
+}
+#kenny .face { /*ЛИЦО*/
+  border-radius: 50%;
+  position: absolute;
+  top: 23px;
+  left: 5px;
+  width: 115px;
+  height: 116px;
+  background: #f7cfa7;
+  z-index: 15;
+}
+#kenny .face .hat { /*КАПЮШОН*/
+  border-radius: 50%;
+  box-shadow: 0 1px 0 #8d370a;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: solid 26px #f15911;
+  border-left-width: 23px;
+  border-right-width: 23px;
+  z-index: 10;
+}
+#kenny .face:before { /*ВНУТРЕННОСТИ КАПЮШОНА*/
+  border-radius: 50%;
+  content: " ";
+  position: absolute;
+  top: 25px;
+  left: 0;
+  right: -30px;
+  bottom: 25px;
+  border-left: solid 34px #653c1a;
+  z-index: 5;
+}
+#kenny .face:after { /*ВНУТРЕННОСТИ КАПЮШОНА*/
+  border-radius: 50%;
+  content: " ";
+  position: absolute;
+  top: 25px;
+  left: -30px;
+  right: 0;
+  bottom: 25px;
+  border-right: solid 34px #653c1a;
+  z-index: 5;
+}
+#kenny .face .eye-left, #kenny .face .eye-right { /*ГЛАЗА*/
+  border-radius: 65% 50%;
+  position: absolute;
+  top: 41px;
+  left: 26px;
+  width: 31px;
+  height: 36px;
+  background: #ffffff;
+}
+#kenny .face .eye-left:after, #kenny .face .eye-right:after { /*ЗРАЧКИ*/
+  border-radius: 50%;
+  content: " ";
+  position: absolute;
+  top: 15px;
+  left: 19px;
+  height: 3px;
+  width: 3px;
+  background: #000000;
+}
+#kenny .face .eye-right { /*ПРАВЫЙ ГЛАЗ*/
+  border-radius: 50% 65%;
+  left: 58px;
+}
+#kenny .face .eye-right:after { /*ПРАВЫЙ ГЛАЗ ЗРАЧЕК*/
+  top: 14px;
+  left: 7px;
+}
+#kenny .face .lace { /*ОБОДОК ВНУТРЕННОСТЕЙ КАПЮШОНА*/
+  border-radius: 50%;
+  position: absolute;
+  top: 26px;
+  left: 17px;
+  right: 18px;
+  bottom: 17px;
+  border: solid 1px #653c1a;
+  z-index: 15;
+}
+#kenny .face .lace:before { /*ШНУРОК Л*/
+  border-radius: 0% 0% 100% 0%;
+  box-shadow: 1px 1px 0 #653c1a;
+  content: " ";
+  position: absolute;
+  top: 61px;
+  left: 31px;
+  width: 6px;
+  height: 19px;
+  z-index: 10;
+}
+#kenny .face .lace:after { /*ШНУРОК П*/
+  border-radius: 0% 0% 0% 100%;
+  box-shadow: -1px 1px 0 #653c1a;
+  content: " ";
+  position: absolute;
+  top: 61px;
+  left: 41px;
+  width: 5px;
+  height: 20px;
+  z-index: 10;
+}
+#kenny .body { /*ТЕЛО*/
+  border-radius: 50% 50% 33% 33%/100px 100px 17px 17px;
+  box-shadow: 0 1px 0 #f15911;
+  position: absolute;
+  top: 115px;
+  left: 10px;
+  height: 56px;
+  width: 100px;
+  background: #f15911;
+  z-index: 10;
+}
+#kenny .body .zipper { /*МОЛНИЯ*/
+  position: absolute;
+  top: 14px;
+  left: 50px;
+  width: 1px;
+  height: 47px;
+  background: #653c1a;
+}
+#kenny .body .hand-left { /*ЛЕВАЯ РУКАВИЦА*/
+  border-radius: 40% 40% 50% 50%;
+  position: absolute;
+  top: 40px;
+  left: -2px;
+  width: 20px;
+  height: 20px;
+  background: #673e1e;
+  z-index: 10;
+}
+#kenny .body .hand-right { /*ПРАВАЯ РУКАВИЦА*/
+  border-radius: 50% 50% 40% 40%;
+  position: absolute;
+  top: 40px;
+  left: 87px;
+  width: 20px;
+  height: 20px;
+  background: #673e1e;
+  z-index: 10;
+}
+#kenny .legs { /*ШТАНЫ*/
+  border-radius: 44px 44px 0 0;
+  position: absolute;
+  left: 22px;
+  top: 154px;
+  width: 80px;
+  height: 25px;
+  background: #f15911;
+  z-index: 5;
+}
+#kenny .legs .foot-left, #kenny .legs .foot-right { /*ОБУВЬ*/
+  border-radius: 50% 50% 0 0/7px;
+  position: absolute;
+  top: 21px;
+  left: -8px;
+  width: 48px;
+  height: 5px;
+  background: #21241e;
+  z-index: 5;
+}
+#kenny .legs .foot-right { /*ПРАВАЯ ОБУВЬ*/
+  left: 36px;
+}
+/*КОНЕЦ ЧЕТВЕРТОГО*/
+
