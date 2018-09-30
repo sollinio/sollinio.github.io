@@ -358,6 +358,27 @@ td:nth-child(3){
 }
 /*КОНЕЦ СТИЛЯ ТАБЛИЦЫ*/
 
+/*СТИЛЬ ДЛЯ КУЛЬТУРЫ*/
+
+.post-kultura{
+    margin: 0 0 25px 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 670px;
+    background-color: #fff;
+}
+
+.post-kultura p{
+    text-align: justify;
+    padding: 0 15px 0 10px;
+    text-indent: 20px;
+}
+
+.post-kultura img{
+    padding: 5px 5px 5px 5px;
+}
+
+
 /*СТИЛЬ ДЛЯ СВЯЗИ*/
 
 #p-svaz{
