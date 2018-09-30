@@ -10,7 +10,7 @@
         <!-- Подключаем таблицу стилей и шрифты -->
         <link rel="stylesheet" href="styles.css" type="text/css">
         
-        <!--Указываем поддержку браузера для HTM5[if lt IE 9]>
+        <!--Указываем поддержку браузера для HTM5[if lt IE 9]-->
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
     </head>   
@@ -58,11 +58,11 @@
             <!-- Основной блок -->
             <section>
                 <!-- Обратная связь -->
-                <div class="post-tema">
-                    <div class="post-tema-zagolovok">
+                <main>
+                    <div class="main-zagolovok">
                         <p id="p-svaz">Обратная связь с администрацией сайта</p>
                     </div>
-                    <div class="post-tema-osnova">
+                    <div class="main-osnova">
                         <!-- Наша форма -->
                         <form class="formcommun" action="" method="GET" name="callback">
                             <ul>
@@ -94,6 +94,7 @@
                                     <label for="cty">Город:</label><br>
                                     <input type="text" name="city" id="cty">
                                 </li>
+                                <fieldset><legend>Цель написания письма</legend>
                                 <li>
                                     <label>*Выберите тему письма:</label><br>
                                     <select name="reason">
@@ -107,15 +108,19 @@
                                     <textarea name="point" cols="40" rows="6" >
                                     </textarea>
                                 </li>
+                                </fieldset>
                                 <li>
                                     <button class="submit" type="submit">Отправить</button>
                                 </li>
                                 
                             </ul>
                         </form>
+                        <details>
+                            <summary>Правила отправки сообщения</summary>
+                            <p>Отсылая нам письмо вы автоматически соглашаетесь с правилами действующими на нашем сайте. В случаи пропоганды\оскорбления\материала для взрослых ваш ip будет заблокирован.</p></details>
                        
                     </div>
-                </div>
+                </main>
             </section>
         </div>
         
@@ -131,7 +136,7 @@
                     <li><a href="commun.html">Связь</a></li>
                 </ul>
             </menu>
-            <p>&copy; Дебальцево 2018</p>
+           <p>&copy; Дебальцево 2018 <u> fady.kh </u> </p>
         </footer>
         
     

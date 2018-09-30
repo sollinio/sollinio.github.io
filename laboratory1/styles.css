@@ -20,17 +20,10 @@ body {
 	line-height: 1; /* устанавливаем базовую высоту */
     margin: auto; /*убираем отступы*/
 }
-ol, ul {
+ ul {
 	list-style: none; /* убираем маркеры для нумерованных и обычных списков */
 }
-blockquote, q {
-	quotes: none; /* убираем кавычки для цитат */
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: ''; /* убираем */
-	content: none; /* и скрываем генерируемое содержимое */
-}
+
 :focus {
 	outline: 0; /* убираем контуры вокруг ссылок при фокусе */
 }
@@ -63,6 +56,34 @@ a {
     src:url(css/tahoma.ttf);
 }
 
+/*Стиль для цитат*/
+
+blockquote, q {
+    font-family: Times, serif; /* Шрифт с засечками */ 
+    font-style: italic; /* Курсивное начертание текста */
+    color: #121f13; /* Цвет текста */
+}
+
+blockquote{
+    padding: 5px 20px 5px 20px;
+    text-indent: 30px;
+    text-align: justify;
+}
+
+cite{
+    padding: 10px 5px;
+}
+
+#cite-p{
+    text-align: right;
+}
+
+figcaption{
+    font-size: 13px;
+    text-align: right;
+}
+
+
 body{
     background-color: #ebe8e8;
 }
@@ -76,6 +97,14 @@ body{
 h1{
     font-family: Andantino_script;
     font-size: 30pt;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+
+h2{
+    font-family: Andantino_script;
+    font-size: 25pt;
     padding-bottom: 10px;
     text-align: center;
 }
@@ -270,6 +299,7 @@ section{
     height: 320px;
 }
 
+
 .post-time{
     padding-left: 10px;
     color: #ea2127;
@@ -283,7 +313,7 @@ footer{
     background-color: #089a37;
 }
 
-footer p{
+footer > p{
     color: #fff;
     text-align: center;
 }
@@ -317,14 +347,18 @@ menu{
 }
 
 
-
-
 /*СТИЛЬ ТАБЛИЦЫ НА СТРАНИЦЕ ИСТОРИЯ*/
 table {
     border-spacing: 0 10px;
     font-family: 'Times New Roman', sans-serif;
     font-weight: bold;
 }
+
+caption{
+    padding: 5px 10px;
+    text-align: center;
+}
+
 th {
     padding: 10px 20px;
     background: #089a37;
@@ -375,11 +409,70 @@ td:nth-child(3){
 }
 
 .post-kultura img{
+    padding: 10px 10px 10px 10px;
+}
+
+.post-kultura ol{
+    padding-top: 10px;
+    margin: 0 10px 25px 30px;
+}
+
+.post-kultura li{
     padding: 5px 5px 5px 5px;
+}
+
+/*СТИЛЬ ДЛЯ ИНФРАСТРУКТУРЫ*/
+.post-infrastructure{
+    margin: 0 0 25px 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 670px;
+    background-color: #fff;
+}
+
+.post-infrastructure p{
+    text-align: justify;
+    padding: 0 15px 0 10px;
+    text-indent: 20px;
+}
+
+.post-infrastructure img{
+    padding: 10px 10px 10px 10px;
+}
+
+audio{
+    padding: 10px 10px 10px 180px;
+}
+
+.post-text{
+    font-size: 20px;
+    text-align: justify;
+    text-indent: 20px;
+}
+
+.post-text ul{
+    margin: 5px 5px 5px 30px;
+    list-style:disc;
 }
 
 
 /*СТИЛЬ ДЛЯ СВЯЗИ*/
+
+main{
+    margin: 0 0 25px 0;
+    padding-bottom: 10px;
+    width: 670px;
+    background-color: #fff;
+}
+
+.main-zagolovok{
+    padding: 10px 0 10px 30px;
+    background-color: #089a37;
+}
+
+.main-osnova{
+    text-align: center;
+}
 
 #p-svaz{
    text-decoration: none;
@@ -431,7 +524,6 @@ td:nth-child(3){
     padding:5px 8px;
 }
 .formcommun textarea {padding:8px; width:300px;}
-.formcommun button {margin-left:156px;}
 
 
 .formcommun input, .formcommun textarea {
@@ -462,6 +554,7 @@ button.submit:hover {
     cursor: pointer;
 }
 button.submit:active {
+    padding: 10px 0;
     border: 1px solid #20911e;
 }
 
@@ -471,3 +564,17 @@ button.submit:active {
     font-size: 25px;
 }
 
+fieldset{
+    margin: 3px 0;
+    border: 1px #20911e solid;
+}
+
+legend{
+    color: #ea2127;
+    font-family: Andantino_script;
+    font-size: 25pt;
+}
+
+details{
+    padding: 15px 0;
+}
