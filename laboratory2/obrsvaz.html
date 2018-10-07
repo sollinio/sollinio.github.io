@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head><!-- Заголовки сайта -->
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <title>Обратная связь</title>
+         <!-- Таблица стилей -->
+        <link rel="stylesheet" href="styles.css" type="text/css">
+    </head>
+    
+    <body><!-- Тело сайта -->
+        <!-- Шапка сайта -->
+        <header>
+            <div class="gerb"> <!-- Герб сайта -->
+                <a href="index.html">
+                    <img src="img/gerb.png" alt="EROR Gelb">
+                </a>
+            </div>
+            <!-- Навигация -->
+            <div id="obrsvaz"><a href="obrsvaz.html">Обратная связь</a></div>
+            <nav>
+                <ul class="navigathia">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="istoria.html">История</a></li>
+                    <li><a href="kyltyra.html">Культура</a></li>
+                    <li><a href="infrastr.html">Инфраструктура</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section><!--Основной блок -->
+            <main>
+                <div class="main-title">
+                    <h1>Обратная связь с администрацией сайта</h1>
+                </div>
+                <div class="main-osnova">
+                    <!-- Форма -->
+                    <form class="formcommun" action="" method="GET" name="callback">
+                        <ul>
+                            <fieldset><legend><p class="main-p-forma">Свяжитесь с нами!</p></legend>
+                                <li>
+                                    <label for="Sname">*Фамилия:</label><br>
+                                    <input type="text" name="second_name" id="Sname">
+                                </li>
+                                <li>
+                                    <label for="Fname">Имя:</label><br>
+                                    <input type="text" name="first_name" id="Fname" >
+                                </li>
+                                <li>
+                                    <label for="SrName">Отчество:</label><br>
+                                    <input type="text" name="sur_name" id="SrName" >
+                                </li>
+                                <li>
+                                    <label for="email">*Email:</label><br>
+                                    <input type="email" name="email" id="email" >
+                                </li>
+                                <li>
+                                    <label for="phone">*Телефон:</label><br>
+                                    <input type="tel" name="phone" id="phone">
+                                </li>
+                                <li>
+                                    <label for="cty">Город:</label><br>
+                                    <input type="text" name="city" id="cty">
+                                </li>
+                                <li>
+                                    <label>*Выберите тему письма:</label><br>
+                                    <select name="reason">
+                                        <option selected>Техничиские проблемы</option>
+                                        <option >Неправильная информация</option>
+                                        <option >Предложение</option>
+                                        <option >Пожелание</option>
+                                        <option >Жалоба</option>
+                                        <option >Другое</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <label>*Текст сообщения:</label><br>
+                                    <textarea name="point" cols="40" rows="6" >
+                                    </textarea>
+                                </li>
+                                    <li>
+                                     <span class="required_notification">* Поля обязательные для заполнения</span>
+                                </li>
+                                </fieldset>
+                                <li>
+                                    <button class="submit" type="submit">Отправить</button>
+                                </li>
+                        </ul>
+                    </form>
+                </div>
+            </main>
+        </section>
+        <footer><!-- Подвал сайта -->
+            <ul class="footer-navigathia">
+                <li><a href="index.html" id="footer-navig-seitchas">Главная</a></li>
+                <li><a href="istoria.html">История</a></li>
+                <li><a href="kyltyra.html">Культура</a></li>
+                <li><a href="infrastr.html">Инфраструктура</a></li>
+                <li><a href="obrsvaz.html">Обратная связь</a></li>
+            </ul>
+            <p>&copy;Ясиноватая 2018-2019 <u></u> </p>
+            <p><u>Tsybik.Alekander@yandex.ru</u></p>
+        </footer>
+    </body>
+</html>
