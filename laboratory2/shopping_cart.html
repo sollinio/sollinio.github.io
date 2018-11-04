@@ -5,7 +5,7 @@
         <meta http-equiv="Content-type" content="text/html; charset=utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=Edge">
         
-        <title>Shop</title>
+        <title>Shopping cart</title>
         
         <!-- Подключаем таблицу стилей и шрифты -->
         <link rel="stylesheet" href="styles.css" type="text/css">
@@ -69,7 +69,7 @@
                 <!-- Корзина -->
                 <div id="korzina">
                     <ul class="korzina-topmenu">
-                        <li><a href="" class="korzina-link"><a href="shopping_cart.html"><img src="images/Icon_LiveCart.png" alt="EROR ICON"></a></a>
+                        <li><a class="korzina-link"><a href="shopping_cart.html"><img src="images/Icon_LiveCart.png" alt="EROR ICON"></a></a>
                             <ul class="korzina-submenu">
                                 <li>
                                     <div class="korzina-image">
@@ -134,169 +134,157 @@
         <menu>
             <ul class="menu-main">
                 <li><a href="index.html">HOME</a></li>
-                <li><a href="product.html">MAN</a></li>
-                <li><a href="product.html">WOMEN</a></li>
-                <li><a href="product.html">KIDS</a></li>
-                <li><a href="product.html">ACCESSORIES</a></li>
-                <li><a href="product.html">FEATURED</a></li>
-                <li><a href="product.html">HOT DEALS</a></li>
+                <li><a href="#">MAN</a></li>
+                <li><a href="#">WOMEN</a></li>
+                <li><a href="#">KIDS</a></li>
+                <li><a href="#">ACCESSORIES</a></li>
+                <li><a href="#">FEATURED</a></li>
+                <li><a href="#">HOT DEALS</a></li>
             </ul>
         </menu>
-        <div class="slider"></div>
-        <div class="category">
-            <div id="banner1">
-                <a href="#">HOT DEAL <br> <b>FOR MEN</b></a> 
-            </div>
-            <div id="banner2">
-                <a href="#">30% OFFER <br> <b>WOMEN</b> </a>
-            </div>
-            <div id="banner3">
-                <a href="#">NEW ARRIVALS<br> <b>FOR KIDS</b> </a>
-            </div>
-            <div id="banner4">
-                 <a href="#">LUXIROUS & TRENDU<br> <b>ACCESORIES</b></a>
-            </div>
+        <!-- Новые поступления  -->
+        <div class="arrivals">
+            <h2>NEW ARRIVALS</h2>
+            <p>Home / Men /<b> New Arrivals</b></p>
         </div>
-        <div class="product">
-            <div class="product-text">
-                Fetured Items
-                <p>Shop for items based on what we featured in this week</p>
-            </div>
+        <!-- Карточка шопинга  -->
+        <div class="shopping_cart">
+            <!-- Таблица покупок -->
             <table>
                 <tr>
-                    <td><!--Ячейки продуктов -->
-                        <div class="product-wrap">
-                            <div class="product-item">
-                                <img src="images/image-product/product1.png">
-                                <div class="product-buttons">
-                                    <a href="#" class="button">Add to Cart</a>
-                                </div>
-                            </div>
-                            <div class="product-title">
-                                <a href="#">MANGO PEOLE T-SHIRT</a>
-                                <span class="product-price">$52.00</span>
-                            </div>
-                        </div>
+                    <th colspan="2">product details<span style="white-space:pre">	</span></th>
+                    <th>unite price</th>
+                    <th>quantity</th>
+                    <th>shipping</th>
+                    <th>subtotal</th>
+                    <th>action</th>
+                </tr>
+                <tr>
+                    <td><img src="images/image-shoping_cart/shopping_cart1.png"></td>
+                    <td>
+                        <ul>
+                            <li class="spoh-li-d">Mango  People  T-shirt</li>
+                            <li><b>Color: </b><dr>Red</dr></li>
+                            <li><b>Size: </b><dr>XXL</dr></li>
+                        </ul>
                     </td>
-                    <td><!--Ячейки продуктов -->
-                        <div class="product-wrap">
-                            <div class="product-item">
-                                <img src="images/image-product/product2.png">
-                                <div class="product-buttons">
-                                    <a href="#" class="button">Add to Cart</a>
-                                </div>
-                            </div>
-                            <div class="product-title">
-                                <a href="#">MANGO PEOLE T-SHIRT</a>
-                                <span class="product-price">$52.00</span>
-                            </div>
-                        </div>
+                    <td>$150</td>
+                    <td>
+                        <form class="formcom-shopp" action="" method="GET" name="callback">
+                            <input required type="number" name="number" id="number"  value="1">
+                        </form>
                     </td>
-                    <td><!--Ячейки продуктов -->
-                        <div class="product-wrap">
-                            <div class="product-item">
-                                <img src="images/image-product/product3.png">
-                                <div class="product-buttons">
-                                    <a href="#" class="button">Add to Cart</a>
-                                </div>
-                            </div>
-                            <div class="product-title">
-                                <a href="#">MANGO PEOLE T-SHIRT</a>
-                                <span class="product-price">$52.00</span>
-                            </div>
-                        </div>
-                    </td>
-                    <td><!--Ячейки продуктов -->
-                        <div class="product-wrap">
-                            <div class="product-item">
-                                <img src="images/image-product/product4.png">
-                                <div class="product-buttons">
-                                    <a href="#" class="button">Add to Cart</a>
-                                </div>
-                            </div>
-                            <div class="product-title">
-                                <a href="#">MANGO PEOLE T-SHIRT</a>
-                                <span class="product-price">$52.00</span>
-                            </div>
+                    <td>free</td>
+                    <td>$300</td>
+                    <td><div class="shopping-close">
+                            <i class="fa fa-times" aria-hidden="true"></i>
                         </div>
                     </td>
                 </tr>
                 <tr>
-                    <td><!--Ячейки продуктов -->
-                        <div class="product-wrap">
-                            <div class="product-item">
-                                <img src="images/image-product/product1.png">
-                                <div class="product-buttons">
-                                    <a href="#" class="button">Add to Cart</a>
-                                </div>
-                            </div>
-                            <div class="product-title">
-                                <a href="#">MANGO PEOLE T-SHIRT</a>
-                                <span class="product-price">$52.00</span>
-                            </div>
-                        </div>
+                    <td><img src="images/image-shoping_cart/shopping_cart2.png"></td>
+                    <td>
+                        <ul>
+                            <li class="spoh-li-d">Mango  People  T-shirt</li>
+                            <li><b>Color: </b><dr>Red</dr></li>
+                            <li><b>Size: </b><dr>XXL</dr></li>
+                        </ul>
                     </td>
-                    <td><!--Ячейки продуктов -->
-                        <div class="product-wrap">
-                            <div class="product-item">
-                                <img src="images/image-product/product1.png">
-                                <div class="product-buttons">
-                                    <a href="#" class="button">Add to Cart</a>
-                                </div>
-                            </div>
-                            <div class="product-title">
-                                <a href="#">MANGO PEOLE T-SHIRT</a>
-                                <span class="product-price">$52.00</span>
-                            </div>
-                        </div>
+                    <td>$150</td>
+                    <td>
+                        <form class="formcom-shopp" action="" method="GET" name="callback">
+                            <input required type="number" name="number" id="number"  value="1">
+                        </form>
                     </td>
-                    <td><!--Ячейки продуктов -->
-                        <div class="product-wrap">
-                            <div class="product-item">
-                                <img src="images/image-product/product1.png">
-                                <div class="product-buttons">
-                                    <a href="#" class="button">Add to Cart</a>
-                                </div>
-                            </div>
-                            <div class="product-title">
-                                <a href="#">MANGO PEOLE T-SHIRT</a>
-                                <span class="product-price">$52.00</span>
-                            </div>
-                        </div>
-                    </td>
-                    <td><!--Ячейки продуктов -->
-                        <div class="product-wrap">
-                            <div class="product-item">
-                                <img src="images/image-product/product1.png">
-                                <div class="product-buttons">
-                                    <a href="#" class="button">Add to Cart</a>
-                                </div>
-                            </div>
-                            <div class="product-title">
-                                <a href="#">MANGO PEOLE T-SHIRT</a>
-                                <span class="product-price">$52.00</span>
-                            </div>
+                    <td>free</td>
+                    <td>$300</td>
+                    <td><div class="shopping-close">
+                            <i class="fa fa-times" aria-hidden="true"></i>
                         </div>
                     </td>
                 </tr>
+                <tr>
+                    <td><img src="images/image-shoping_cart/shopping_cart3.png"></td>
+                    <td>
+                        <ul>
+                            <li class="spoh-li-d">Mango  People  T-shirt</li>
+                            <li><b>Color: </b><dr>Red</dr></li>
+                            <li><b>Size: </b><dr>XXL</dr></li>
+                        </ul>
+                    </td>
+                    <td>$150</td>
+                    <td>
+                        <form class="formcom-shopp" action="" method="GET" name="callback">
+                            <input required type="number" name="number" id="number"  value="1">
+                        </form>
+                    </td>
+                    <td>free</td>
+                    <td>$300</td>
+                    <td><div class="shopping-close">
+                            <i class="fa fa-times" aria-hidden="true"></i>
+                        </div>
+                    </td>
+                </tr>
+               
             </table>
-            <div class="button-browse"><a href="#">Browse All Product</a></div>
-        </div>
-        <div class="feature">
-            <div class="feature-lefr"></div>
-            <div class="feature-right">
-                <h2 id="feature1">Free Delivery</h2>
-                <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
-                
-                <h2 id="feature2">Sales & discounts</h2>
-                <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
-                
-                <h2 id="feature3">Quality assurance</h2>
-                <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+            <!-- Конец таблицы -->
+            <button class="shopping_cart-clear" type="submit">CLEAR SHOPPING CART</button>
+            <button class="shopping_cart-continue" type="submit">CONTINUE SHOPPING</button>
+            
+            <div class="shop-center">
+                <div class="shopping_address">
+                    <ul>
+                        <li><a href="" class="">Shipping Adress</a>
+                            <ul>
+                                <form class="shopping_cart_form" action="" method="GET" name="shipping">
+                                    <li>
+                                        <input required type="text" name="text" id="text" placeholder="Сity">
+                                    </li>
+                                <li>
+                                    <input required type="text" name="text" id="text" placeholder="Region">
+                                    </li>
+                                    <li>
+                                        <input required type="text" name="text" id="text" placeholder="Postcode (6)" pattern="[0-9]{6}">
+                                    </li>
+                                    <li>
+                                        <button class="submit" type="submit">get a quote</button>
+                                    </li>
+                                </form>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="shopping_discount">
+                    <ul>
+                        <li><a href="" class="">coupon  discount</a>
+                            <ul>
+                                <form class="shopping_discount_form" action="" method="GET" name="shipping">
+                                    <li>
+                                        <p>Enter your coupon code if you have one</p>
+                                 </li>
+                                    <li>
+                                        <input required type="text" name="text" id="text" placeholder="Code">
+                                    </li>
+                                    <li>
+                                        <button class="submit" type="submit">Apply coupon</button>
+                                    </li>
+                                </form>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="shopping-total">
+                    <p>Sub total<b>$900</b></p>
+                    <h1>GRAND TOTAL<b>$900</b></h1>
+                    <hr>
+                    <button class="submit" type="submit">proceed to checkout</button>
+                </div>
             </div>
+            
         </div>
         
-         <!-- Подписка на новости -->
+        
+        <!-- Подписка на новости -->
         <div class="subscribe">
             <div class="coments-foto"></div>
             <div class="coments">
@@ -347,11 +335,11 @@
                 <div class="footer-menu-colon">
                     <ul class="footer-submenu">
                         <li><a href="#" class="footer-submenu-b">SHOP CATEGORY</a></li>
-                        <li><a href="product.html">Men</a></li>
-                        <li><a href="product.html">Women</a></li>
-                        <li><a href="product.html">Child</a></li>
-                        <li><a href="product.html">Apparel</a></li>
-                        <li><a href="product.html">Brows All</a></li>        
+                        <li><a href="#">Men</a></li>
+                        <li><a href="#">Women</a></li>
+                        <li><a href="#">Child</a></li>
+                        <li><a href="#">Apparel</a></li>
+                        <li><a href="#">Brows All</a></li>        
                     </ul>
                 </div>
             </div>

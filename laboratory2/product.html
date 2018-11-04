@@ -5,7 +5,7 @@
         <meta http-equiv="Content-type" content="text/html; charset=utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=Edge">
         
-        <title>Shop</title>
+        <title>Product</title>
         
         <!-- Подключаем таблицу стилей и шрифты -->
         <link rel="stylesheet" href="styles.css" type="text/css">
@@ -69,7 +69,7 @@
                 <!-- Корзина -->
                 <div id="korzina">
                     <ul class="korzina-topmenu">
-                        <li><a href="" class="korzina-link"><a href="shopping_cart.html"><img src="images/Icon_LiveCart.png" alt="EROR ICON"></a></a>
+                        <li><a class="korzina-link"><a href="shopping_cart.html"><img src="images/Icon_LiveCart.png" alt="EROR ICON"></a></a>
                             <ul class="korzina-submenu">
                                 <li>
                                     <div class="korzina-image">
@@ -134,37 +134,75 @@
         <menu>
             <ul class="menu-main">
                 <li><a href="index.html">HOME</a></li>
-                <li><a href="product.html">MAN</a></li>
-                <li><a href="product.html">WOMEN</a></li>
-                <li><a href="product.html">KIDS</a></li>
-                <li><a href="product.html">ACCESSORIES</a></li>
-                <li><a href="product.html">FEATURED</a></li>
-                <li><a href="product.html">HOT DEALS</a></li>
+                <li><a href="#">MAN</a></li>
+                <li><a href="#">WOMEN</a></li>
+                <li><a href="#">KIDS</a></li>
+                <li><a href="#">ACCESSORIES</a></li>
+                <li><a href="#">FEATURED</a></li>
+                <li><a href="#">HOT DEALS</a></li>
             </ul>
         </menu>
-        <div class="slider"></div>
-        <div class="category">
-            <div id="banner1">
-                <a href="#">HOT DEAL <br> <b>FOR MEN</b></a> 
-            </div>
-            <div id="banner2">
-                <a href="#">30% OFFER <br> <b>WOMEN</b> </a>
-            </div>
-            <div id="banner3">
-                <a href="#">NEW ARRIVALS<br> <b>FOR KIDS</b> </a>
-            </div>
-            <div id="banner4">
-                 <a href="#">LUXIROUS & TRENDU<br> <b>ACCESORIES</b></a>
-            </div>
+        <!-- Новые поступления  -->
+        <div class="arrivals">
+            <h2>NEW ARRIVALS</h2>
+            <p>Home / Men /<b> New Arrivals</b></p>
         </div>
         <div class="product">
-            <div class="product-text">
-                Fetured Items
-                <p>Shop for items based on what we featured in this week</p>
+            <!-- Каталог слева  -->
+            <div class="product-category">
+                <ul class="cd-accordion-menu animated">
+                    <li class="has-children">
+                        <input type="checkbox" name ="group-2" id="group-2">
+                        <label for="group-2">CATEGORY</label>
+                        <ul>
+                            <li><a href="#0">Bags</a></li>
+                            <li><a href="#0">Denim</a></li>
+                            <li><a href="#0">Pants</a></li>
+                            <li><a href="#0">Polos</a></li>
+                            <li><a href="#0">Shorts</a></li>
+                            <li><a href="#0">Denim</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-children">
+                        <input type="checkbox" name ="group-3" id="group-3">
+                        <label for="group-3">BRAND</label>
+                        <ul>
+                            <li><a href="#0">Image</a></li>
+                            <li><a href="#0">Image</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-children">
+                        <input type="checkbox" name ="group-4" id="group-4">
+                        <label for="group-4">DESIGNER</label>
+                        <ul>
+                            <li><a href="#0">Image</a></li>
+                            <li><a href="#0">Image</a></li>
+                        </ul>
+                    </li>
+                </ul> <!-- cd-accordion-menu -->
             </div>
-            <table>
-                <tr>
-                    <td><!--Ячейки продуктов -->
+            <!-- Товар справа  -->
+            <div class="product-list">    
+                <div class="product-sort"> <!-- Сортировка для продуктов -->
+                    <form>
+                        <label for="text">Sort By</label>
+                        <select атрибуты>
+                            <option атрибуты>Name</option>
+                            <option атрибуты>Nam11111111e</option>
+                        </select>
+                        <label for="text">Show</label>
+                        <select атрибуты>
+                            <option атрибуты>09</option>
+                            <option атрибуты>12</option>
+                            <option атрибуты>15</option>
+                            <option атрибуты>20</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="product">
+                    <table>
+                        <tr>
+                            <td><!--Ячейки продуктов -->
                         <div class="product-wrap">
                             <div class="product-item">
                                 <img src="images/image-product/product1.png">
@@ -178,7 +216,7 @@
                             </div>
                         </div>
                     </td>
-                    <td><!--Ячейки продуктов -->
+                            <td><!--Ячейки продуктов -->
                         <div class="product-wrap">
                             <div class="product-item">
                                 <img src="images/image-product/product2.png">
@@ -192,7 +230,7 @@
                             </div>
                         </div>
                     </td>
-                    <td><!--Ячейки продуктов -->
+                            <td><!--Ячейки продуктов -->
                         <div class="product-wrap">
                             <div class="product-item">
                                 <img src="images/image-product/product3.png">
@@ -206,7 +244,7 @@
                             </div>
                         </div>
                     </td>
-                    <td><!--Ячейки продуктов -->
+                            <td><!--Ячейки продуктов -->
                         <div class="product-wrap">
                             <div class="product-item">
                                 <img src="images/image-product/product4.png">
@@ -220,9 +258,9 @@
                             </div>
                         </div>
                     </td>
-                </tr>
-                <tr>
-                    <td><!--Ячейки продуктов -->
+                        </tr>
+                        <tr>
+                            <td><!--Ячейки продуктов -->
                         <div class="product-wrap">
                             <div class="product-item">
                                 <img src="images/image-product/product1.png">
@@ -236,7 +274,7 @@
                             </div>
                         </div>
                     </td>
-                    <td><!--Ячейки продуктов -->
+                            <td><!--Ячейки продуктов -->
                         <div class="product-wrap">
                             <div class="product-item">
                                 <img src="images/image-product/product1.png">
@@ -250,7 +288,7 @@
                             </div>
                         </div>
                     </td>
-                    <td><!--Ячейки продуктов -->
+                            <td><!--Ячейки продуктов -->
                         <div class="product-wrap">
                             <div class="product-item">
                                 <img src="images/image-product/product1.png">
@@ -264,7 +302,7 @@
                             </div>
                         </div>
                     </td>
-                    <td><!--Ячейки продуктов -->
+                            <td><!--Ячейки продуктов -->
                         <div class="product-wrap">
                             <div class="product-item">
                                 <img src="images/image-product/product1.png">
@@ -278,25 +316,96 @@
                             </div>
                         </div>
                     </td>
-                </tr>
-            </table>
-            <div class="button-browse"><a href="#">Browse All Product</a></div>
-        </div>
-        <div class="feature">
-            <div class="feature-lefr"></div>
-            <div class="feature-right">
-                <h2 id="feature1">Free Delivery</h2>
-                <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
-                
-                <h2 id="feature2">Sales & discounts</h2>
-                <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
-                
-                <h2 id="feature3">Quality assurance</h2>
-                <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                        </tr>
+                        <tr>
+                            <td><!--Ячейки продуктов -->
+                        <div class="product-wrap">
+                            <div class="product-item">
+                                <img src="images/image-product/product1.png">
+                                <div class="product-buttons">
+                                    <a href="#" class="button">Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="product-title">
+                                <a href="#">MANGO PEOLE T-SHIRT</a>
+                                <span class="product-price">$52.00</span>
+                            </div>
+                        </div>
+                    </td>
+                            <td><!--Ячейки продуктов -->
+                        <div class="product-wrap">
+                            <div class="product-item">
+                                <img src="images/image-product/product1.png">
+                                <div class="product-buttons">
+                                    <a href="#" class="button">Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="product-title">
+                                <a href="#">MANGO PEOLE T-SHIRT</a>
+                                <span class="product-price">$52.00</span>
+                            </div>
+                        </div>
+                    </td>
+                            <td><!--Ячейки продуктов -->
+                        <div class="product-wrap">
+                            <div class="product-item">
+                                <img src="images/image-product/product1.png">
+                                <div class="product-buttons">
+                                    <a href="#" class="button">Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="product-title">
+                                <a href="#">MANGO PEOLE T-SHIRT</a>
+                                <span class="product-price">$52.00</span>
+                            </div>
+                        </div>
+                    </td>
+                            <td><!--Ячейки продуктов -->
+                        <div class="product-wrap">
+                            <div class="product-item">
+                                <img src="images/image-product/product1.png">
+                                <div class="product-buttons">
+                                    <a href="#" class="button">Add to Cart</a>
+                                </div>
+                            </div>
+                            <div class="product-title">
+                                <a href="#">MANGO PEOLE T-SHIRT</a>
+                                <span class="product-price">$52.00</span>
+                            </div>
+                        </div>
+                    </td>
+                        </tr>
+                    </table>
+                    <div class="product-str"> <p>
+                        <a>1&nbsp;</a><a>2&nbsp;</a><a>3&nbsp;</a><a>4&nbsp;</a><a>5&nbsp;</a><a>6&nbsp;</a>..... <a>20</a>
+                        </p> </div>
+                    <button class="product-view" type="submit">View All</button>
+                </div>
             </div>
         </div>
-        
          <!-- Подписка на новости -->
+        <div class="feature-box">
+            <div class="feature-box-section">
+                <ul>
+                    <li>
+                        <p id="feature-box-section-h1"></p>
+                        <h2>Free Delivery</h2>
+                        <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                    </li>
+                    <li>
+                        <p id="feature-box-section-h2"></p>
+                        <h2>Sales & discounts</h2>
+                        <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                    </li>
+                    <li>
+                        <p id="feature-box-section-h3"></p>
+                        <h2>Quality assurance</h2>
+                        <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Подписка на новости -->
         <div class="subscribe">
             <div class="coments-foto"></div>
             <div class="coments">
@@ -347,11 +456,11 @@
                 <div class="footer-menu-colon">
                     <ul class="footer-submenu">
                         <li><a href="#" class="footer-submenu-b">SHOP CATEGORY</a></li>
-                        <li><a href="product.html">Men</a></li>
-                        <li><a href="product.html">Women</a></li>
-                        <li><a href="product.html">Child</a></li>
-                        <li><a href="product.html">Apparel</a></li>
-                        <li><a href="product.html">Brows All</a></li>        
+                        <li><a href="#">Men</a></li>
+                        <li><a href="#">Women</a></li>
+                        <li><a href="#">Child</a></li>
+                        <li><a href="#">Apparel</a></li>
+                        <li><a href="#">Brows All</a></li>        
                     </ul>
                 </div>
             </div>
