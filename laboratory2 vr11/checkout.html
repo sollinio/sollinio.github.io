@@ -1,0 +1,292 @@
+<!doctype html>
+<html>
+    <!-- Верх сайта -->
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <!-- Специальные метатеги для поиска на сайтах -->
+        <meta name="description" content="Cайт Balloons Shop посвящённый праздникам. Здесь вы можете купить всё для праздников">
+        <meta name="keywords" content="праздник,шарик,аниматор,день рождения,вечеринка,заказ"> 
+        
+        <title>Balloons Заказ</title>
+        
+        <!-- Подключаем таблицу стилей и шрифты -->
+        <link rel="stylesheet" href="styles.css" type="text/css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    </head>
+    
+    <body>
+        <!-- Шапка сайта -->
+        <header>
+            <!-- Логотип сайта -->
+            <div class="header-logo">
+                <!-- Картинка логотипа -->
+                <div id="logo"></div>
+                <!-- Всплывающая кнопка-меню поиска -->
+                <div id="poisk">
+                    <ul class="poisk-topmenu">
+                        <li><a href="" class="poisk-menu-link">Просмотр</a>
+                            <ul class="poisk-submenu">
+                                <li><a href="" class="poisk-submenu-b">Хеллоуин</a></li>
+                                <hr>
+                                <li><a href="#">Сладости</a></li>
+                                <li><a href="#">Костюмы</a></li>
+                                <li><a href="#">Шляпы</a></li>
+                                <li><a href="#">Аксессуары</a></li>
+                                <li><a href="#">Грим</a></li>
+                                <li><a href="#">Неоновые браслеты</a></li>
+                                <li><a href="#">Декорации</a></li>
+                                <li><a href="#" class="poisk-submenu-b">Новый год</a></li>
+                                <hr>
+                                <li><a href="#">Гирлянды</a></li>
+                                <li><a href="#">Головные уборы</a></li>
+                                <li><a href="#">Украшения</a></li>
+                                <li><a href="#">Аксессуары</a></li>
+                                <li><a href="#">Хлопушки</a></li>
+                                <li><a href="#">Бенгальские огни</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="poisk-form">
+                    <form>
+                        <input type="text" placeholder="Поиск...">
+                        <button type="submit"></button>
+                    </form>
+                </div>
+                <!-- Мой аккаунт -->
+                <div id="myakk">
+                    <ul class="myakk-topmenu">
+                        <li><a href="#" class="myakk-menu-link">Мой профиль</a>
+                            <ul class="myakk-submenu">
+                                <li><a href="#">Редактировать</a></li>
+                                <li><a href="#">История покупок</a></li>
+                                <hr>
+                                <li><a href="#">Настройки</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Корзина -->
+                <div id="korzina">
+                    <ul class="korzina-topmenu">
+                        <li><a href="" class="korzina-link"><a href="shopping_cart.html"><img src="images/Icon_LiveCart.png" alt="EROR ICON"></a></a>
+                            <ul class="korzina-submenu">
+                                <li>
+                                    <div class="korzina-image">
+                                        <img src="images/image-korzina/1.png" alt="EROR IMG">
+                                    </div>
+                                    <div class="korzina-nazvanie">
+                                        <a href="single_page.html">Фонарик летучая мышь</a>
+                                    </div>
+                                    <div class="korzina-thena">1 x ₽159</div>
+                                    <div class="korzina-close">
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </div>
+                                </li>
+                                <hr>
+                                <li>
+                                    <div class="korzina-image">
+                                        <img src="images/image-korzina/2.png" alt="EROR IMG">
+                                    </div>
+                                    <div class="korzina-nazvanie">
+                                        <a href="single_page.html">костюм пиратки</a>
+                                    </div>
+                                    <div class="korzina-thena"> 1 x ₽699</div>
+                                    <div class="korzina-close">
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </div>
+                                </li>
+                                <hr>
+                                <li>
+                                    <div class="korzina-image">
+                                        <img src="images/image-korzina/3.png" alt="EROR IMG">
+                                    </div>
+                                    <div class="korzina-nazvanie">
+                                        <a href="single_page.html">Скелет велюр</a>
+                                    </div>
+                                    <div class="korzina-thena">1 x ₽199</div>
+                                    <div class="korzina-close">
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </div>
+                                </li>
+                                <hr>
+                                <!-- Общая цена -->
+                                <div class="korzina-total">
+                                        <p id="korzina-total-p">ВСЕГО</p>
+                                        <p id="korzina-total-thena">₽1057.00</p>
+                                </div>
+                                <!-- Кнопка покупки -->
+                                <form action="checkout.html">
+                                    <button class="korzina-Checkout" type="submit">Заказать</button>
+                                </form>
+                                <form action="shopping_cart.html">
+                                    <button class="korzina-GoToCart" type="submit">Корзина</button>
+                                </form>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <hr class="hr-body">
+        <!-- Меню сайта -->
+        <menu>
+            <ul class="menu-main">
+                <li><a href="index.html">ГЛАВНАЯ</a></li>
+                <li><a href="product.html">ПРАЗДНИКИ</a></li>
+                <li><a href="product.html">ВЕЧЕРИНКИ</a></li>
+                <li><a href="product.html">ДЕНЬ РОЖДЕНИЯ</a></li>
+                <li><a href="product.html">ШАРИКИ</a></li>
+                <li><a href="product.html">АНИМАТОРЫ</a></li>
+            </ul>
+        </menu>
+         <!-- Новые поступления  -->
+        <div class="arrivals">
+            <h2>НОВЫЙ ЗАКАЗ</h2>
+            <p>Главная / <b> Заказ</b></p>
+        </div>
+         <!-- Доставка  -->
+        <div class="checkout-fill">
+            <div class="checkout-abress">
+                <h1>01. АДРЕС ПЕРЕВОЗКИ</h1>
+                <div class="checkout-guest">
+                    <form class="formcheckout" action="" method="GET" name="callback">
+                        <h2>ПРОВЕРКА в качестве гостя или зарегистрируйтесь</h2>
+                        <h3>Зарегистрируйтесь у нас для будущего удобства</h3>
+                        <br>
+                        <div class="checkout-radio">
+                            <label>
+                                <input class="radio" type="radio" name="radio-test">
+                                <span class="radio-custom"></span>
+                                <span class="label">ПРОВЕРКа в качестве гостя</span>
+                            </label>
+                            <br>
+                            <br>
+                            <label>
+                                <input required class="radio" type="radio" name="radio-test">
+                                <span class="radio-custom"></span>
+                                <span class="label">зарегистрированный</span>
+                            </label>
+                        </div><br>
+                        <h2>ЗАРЕГИСТРИРУЙТЕ И СОХРАНЯЙТЕ ВРЕМЯ!</h2>
+                        <h3>Зарегистрируйтесь у нас для будущего удобства</h3>
+                        <br>
+                        <h3 class="h3-font">Быстрая и легкая проверка</h3>
+                        <h3 class="h3-font">Легкий доступ к истории и статусу заказа</h3>
+                        <br>
+                    <button class="korzina-GoToCart" type="submit">ПРОДОЛЖИТЬ</button>
+                    </form>
+                    <div class="checkout-right">
+                        <h2>УЖЕ ЗАРЕГИСТРИРОВАН?</h2>
+                        <h3>Пожалуйста войдите</h3>
+                        <form class="formcom-checkout-right" action="" method="GET" name="callback">
+                            <ul>
+                                <li>
+                                    <label for="email">email</label><br>
+                                    <input required type="email" name="email" id="email" >
+                                </li>
+                                <li>
+                                    <label for="password">пароль</label><br>
+                                    <input required type="password" name="password" id="password" >
+                                </li>
+                                <br>
+                                <p class="checkout-fileds">* Обязательные поля</p>
+                                <br>
+                                <li>
+                                    <button class="submit" type="submit">АВТОРИЗОВАТЬСЯ</button>
+                                    <a  href="#" id="checkout-forgot">
+                                        Забыли пароль ?
+                                    </a>
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+                    
+                </div>
+                <hr class="hr-checkout">
+                <h1>02. ИНФОРМАЦИЯ О ДВИЖЕНИИ</h1>
+                <hr class="hr-checkout">
+                <h1>03. ИНФОРМАЦИЯ О ПЕРЕВОЗКЕ ГРУЗА</h1>
+                <hr class="hr-checkout">
+                <h1>04. МЕТОД ПЕРЕВОЗКИ</h1>
+                <hr class="hr-checkout">
+                <h1>05. МЕТОД ОПЛАТЫ</h1>
+                <hr class="hr-checkout">
+                <h1>06. ОБЗОР ЗАКАЗА</h1>
+                <hr class="hr-checkout">
+            </div>
+        </div>
+        
+         <!-- Подписка на новости -->
+        <div class="subscribe">
+            <div class="coments-foto"></div>
+            <div class="coments">
+                <p>“Человеку, одаренному воображением, момент приближения праздника всегда сулит чудеса.”
+                    <br>
+                    <b>Никлаус Майклсон</b><br>
+                    <b id="coments-min">"Сестра Керри"</b>
+                </p>
+            </div>
+            <div class="poisk-subscribe">
+                <p>ПОДПИСКА</p>
+                <p id="poisk-subscribe-com">ДЛЯ НАШЕЙ РАССЫЛКИ И ПРОДВИЖЕНИЯ</p>
+                <div class="poisk-subscribe-form">
+                    <form>
+                        <input type="email" placeholder="Введите свой Email">
+                        <button type="email">Подписаться</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="logo-copy"></div>
+            <p id="footer-text">Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of processes and cross-unit partnerships.<br><br>
+            Efficiently plagiarize 24/365 action items and focused infomediaries. Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.
+            </p>
+            
+            <div class="footer-menu">
+                <div class="footer-menu-colon">
+                    <ul class="footer-submenu">
+                        <li><a href="#" class="footer-submenu-b">КОМПАНИЯ</a></li>
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">Магазин</a></li>
+                        <li><a href="#">Вокруг</a></li>
+                        <li><a href="#">Как это работает</a></li>
+                        <li><a href="#">Контакты</a></li>        
+                    </ul>
+                </div>
+                <div class="footer-menu-colon">
+                    <ul class="footer-submenu">
+                        <li><a href="#" class="footer-submenu-b">ИНФОРМАЦИЯ</a></li>
+                        <li><a href="#">Сроки & Условия</a></li>
+                        <li><a href="#">Конфиденциальность</a></li>
+                        <li><a href="#">Как купить</a></li>
+                       <li><a href="#">Как продать</a></li>
+                        <li><a href="#">Продвижение</a></li>        
+                    </ul>
+                </div>
+                <div class="footer-menu-colon">
+                    <ul class="footer-submenu">
+                        <li><a href="#" class="footer-submenu-b">КАТЕГОРИИ</a></li>
+                        <li><a href="product.html">Праздники</a></li>
+                        <li><a href="product.html">Вечеринки</a></li>
+                        <li><a href="product.html">День рождения</a></li>
+                        <li><a href="product.html">Шарики</a></li>
+                        <li><a href="product.html">Аниматоры</a></li>        
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-end"><p>© 2018 Все права защищены. By FADY KH</p>
+                <div class="footer-icon">
+                    <a href="#" id="footer-icon1"></a>
+                    <a href="#" id="footer-icon2"></a>
+                    <a href="#" id="footer-icon3"></a>
+                    <a href="#" id="footer-icon4"></a>
+                    <a href="#" id="footer-icon5"></a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
