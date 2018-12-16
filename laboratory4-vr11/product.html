@@ -1,0 +1,421 @@
+<!doctype html>
+<html>
+    <!-- Верх сайта -->
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <!-- Специальные метатеги для поиска на сайтах -->
+        <meta name="description" content="Cайт Balloons Shop посвящённый праздникам. Здесь вы можете купить всё для праздников">
+        <meta name="keywords" content="праздник,шарик,аниматор,день рождения,вечеринка,заказ"> 
+        
+        <title>Balloons Товар</title>
+        
+        <!-- Подключаем таблицу стилей и шрифты -->
+        <link rel="stylesheet" href="styles.css" type="text/css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    
+    <body>
+        <!-- Шапка сайта -->
+        <header>
+            <!-- Логотип сайта -->
+            <div class="header-logo">
+                <!-- Картинка логотипа -->
+                <div id="logo"></div>
+                <!-- Всплывающая кнопка-меню поиска -->
+                <div id="poisk">
+                    <ul class="poisk-topmenu">
+                        <li><a href="" class="poisk-menu-link">Просмотр</a>
+                            <ul class="poisk-submenu">
+                                <li><a href="" class="poisk-submenu-b">Хеллоуин</a></li>
+                                <hr>
+                                <li><a href="#">Сладости</a></li>
+                                <li><a href="#">Костюмы</a></li>
+                                <li><a href="#">Шляпы</a></li>
+                                <li><a href="#">Аксессуары</a></li>
+                                <li><a href="#">Грим</a></li>
+                                <li><a href="#">Неоновые браслеты</a></li>
+                                <li><a href="#">Декорации</a></li>
+                                <li><a href="#" class="poisk-submenu-b">Новый год</a></li>
+                                <hr>
+                                <li><a href="#">Гирлянды</a></li>
+                                <li><a href="#">Головные уборы</a></li>
+                                <li><a href="#">Украшения</a></li>
+                                <li><a href="#">Аксессуары</a></li>
+                                <li><a href="#">Хлопушки</a></li>
+                                <li><a href="#">Бенгальские огни</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="poisk-form">
+                    <form>
+                        <input type="text" placeholder="Поиск...">
+                        <button type="submit"></button>
+                    </form>
+                </div>
+                <!-- Мой аккаунт -->
+                <div id="myakk">
+                    <ul class="myakk-topmenu">
+                        <li><a href="#" class="myakk-menu-link">Мой профиль</a>
+                            <ul class="myakk-submenu">
+                                <li><a href="#">Редактировать</a></li>
+                                <li><a href="#">История покупок</a></li>
+                                <hr>
+                                <li><a href="#">Настройки</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Корзина -->
+                <div id="korzina">
+                    <ul class="korzina-topmenu">
+                        <li><a href="" class="korzina-link"><a href="shopping_cart.html"><img src="images/Icon_LiveCart.png" alt="EROR ICON"></a></a>
+                            <ul class="korzina-submenu">
+                                <li>
+                                    <div class="korzina-image">
+                                        <img src="images/image-korzina/1.png" alt="EROR IMG">
+                                    </div>
+                                    <div class="korzina-nazvanie">
+                                        <a href="single_page.html">Фонарик летучая мышь</a>
+                                    </div>
+                                    <div class="korzina-thena">1 x ₽159</div>
+                                    <div class="korzina-close">
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </div>
+                                </li>
+                                <hr>
+                                <li>
+                                    <div class="korzina-image">
+                                        <img src="images/image-korzina/2.png" alt="EROR IMG">
+                                    </div>
+                                    <div class="korzina-nazvanie">
+                                        <a href="single_page.html">костюм пиратки</a>
+                                    </div>
+                                    <div class="korzina-thena"> 1 x ₽699</div>
+                                    <div class="korzina-close">
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </div>
+                                </li>
+                                <hr>
+                                <li>
+                                    <div class="korzina-image">
+                                        <img src="images/image-korzina/3.png" alt="EROR IMG">
+                                    </div>
+                                    <div class="korzina-nazvanie">
+                                        <a href="single_page.html">Скелет велюр</a>
+                                    </div>
+                                    <div class="korzina-thena">1 x ₽199</div>
+                                    <div class="korzina-close">
+                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                    </div>
+                                </li>
+                                <hr>
+                                <!-- Общая цена -->
+                                <div class="korzina-total">
+                                        <p id="korzina-total-p">ВСЕГО</p>
+                                        <p id="korzina-total-thena">₽1057.00</p>
+                                </div>
+                                <!-- Кнопка покупки -->
+                                <form action="checkout.html">
+                                    <button class="korzina-Checkout" type="submit">Заказать</button>
+                                </form>
+                                <form action="shopping_cart.html">
+                                    <button class="korzina-GoToCart" type="submit">Корзина</button>
+                                </form>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <hr class="hr-body">
+        <!-- Меню сайта -->
+        <menu>
+            <ul class="menu-main">
+                <li><a href="index.html">ГЛАВНАЯ</a></li>
+                <li><a href="product.html">ПРАЗДНИКИ</a></li>
+                <li><a href="product.html">ВЕЧЕРИНКИ</a></li>
+                <li><a href="product.html">ДЕНЬ РОЖДЕНИЯ</a></li>
+                <li><a href="product.html">ШАРИКИ</a></li>
+                <li><a href="product.html">АНИМАТОРЫ</a></li>
+            </ul>
+        </menu>
+        <!-- Новые поступления  -->
+        <div class="arrivals">
+            <h2>ТОВАР</h2>
+            <p>Главная /<b> Товар</b></p>
+        </div>
+        <div class="product">
+            <!-- Каталог слева  -->
+            <div class="product-category">
+                <ul class="cd-accordion-menu animated">
+                    <li class="has-children">
+                        <input type="checkbox" name ="group-2" id="group-2">
+                        <label for="group-2">Хеллоуин</label>
+                        <ul>
+                            <li><a href="#0">Сладости</a></li>
+                            <li><a href="#0">Костюмы</a></li>
+                            <li><a href="#0">Аксессуары</a></li>
+                            <li><a href="#0">Грим</a></li>
+                            <li><a href="#0">Неоновые браслеты</a></li>
+                            <li><a href="#0">Декорации</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-children">
+                        <input type="checkbox" name ="group-3" id="group-3">
+                        <label for="group-3">Новый год</label>
+                        <ul>
+                            <li><a href="#0">Гирлянды</a></li>
+                            <li><a href="#0">Головные уборы</a></li>
+                            <li><a href="#0">Украшения</a></li>
+                            <li><a href="#0">Аксессуары</a></li>
+                            <li><a href="#0">Хлопушки</a></li>
+                            <li><a href="#0">Бенгальские огни</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-children">
+                        <input type="checkbox" name ="group-4" id="group-4">
+                        <label for="group-4">8 марта</label>
+                        <ul>
+                            <li><a href="#0">Небесные фонарики</a></li>
+                            <li><a href="#0">Украшения и декор</a></li>
+                            <li><a href="#0">Сувениры на 8 марта</a></li>
+                        </ul>
+                    </li>
+                </ul> <!-- cd-accordion-menu -->
+            </div>
+            <!-- Товар справа  -->
+            <div class="product-list">    
+                <div class="product-sort"> <!-- Сортировка для продуктов -->
+                    <form>
+                        <label for="text">Сортировать</label>
+                        <select атрибуты>
+                            <option атрибуты>Название</option>
+                            <option атрибуты>Цена</option>
+                        </select>
+                        <label for="text">Показать</label>
+                        <select атрибуты>
+                            <option атрибуты>09</option>
+                            <option атрибуты>12</option>
+                            <option атрибуты>15</option>
+                            <option атрибуты>20</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="product">
+                    <table>
+                        <tr>
+                            <td><!--Ячейки продуктов -->
+                                <div class="product-wrap">
+                                    <div class="product-item">
+                                        <img src="images/image-product/product1.png">
+                                        <div class="product-buttons">
+                                            <a href="#" class="button">В корзину</a>
+                                        </div>
+                                    </div>
+                                    <div class="product-title">
+                                        <a href="#">костюм шут</a>
+                                        <span class="product-price">₽780.00</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><!--Ячейки продуктов -->
+                                <div class="product-wrap">
+                                    <div class="product-item">
+                                        <img src="images/image-product/product2.png">
+                                        <div class="product-buttons">
+                                            <a href="#" class="button">В корзину</a>
+                                        </div>
+                                    </div>
+                                    <div class="product-title">
+                                        <a href="#">Костюм ведьмочка </a>
+                                        <span class="product-price">₽1200.00</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><!--Ячейки продуктов -->
+                                <div class="product-wrap">
+                                    <div class="product-item">
+                                        <img src="images/image-product/product3.png">
+                                        <div class="product-buttons">
+                                            <a href="#" class="button">В корзину</a>
+                                        </div>
+                                    </div>
+                                    <div class="product-title">
+                                        <a href="#">КОСТЮМ ЛЕТУЧАЯ МЫШКА</a>
+                                        <span class="product-price">₽599.00</span>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><!--Ячейки продуктов -->
+                                <div class="product-wrap">
+                                    <div class="product-item">
+                                        <img src="images/image-product/product9.png">
+                                        <div class="product-buttons">
+                                            <a href="#" class="button">В корзину</a>
+                                        </div>
+                                    </div>
+                                    <div class="product-title">
+                                        <a href="#">костюм буратино</a>
+                                        <span class="product-price">₽629.00</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><!--Ячейки продуктов -->
+                                <div class="product-wrap">
+                                    <div class="product-item">
+                                        <img src="images/image-product/product10.png">
+                                        <div class="product-buttons">
+                                            <a href="#" class="button">В корзину</a>
+                                        </div>
+                                    </div>
+                                    <div class="product-title">
+                                        <a href="#">Костюм дьяволенок </a>
+                                        <span class="product-price">₽450.00</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td><!--Ячейки продуктов -->
+                                <div class="product-wrap">
+                                    <div class="product-item">
+                                        <img src="images/image-product/product11.png">
+                                        <div class="product-buttons">
+                                            <a href="#" class="button">В корзину</a>
+                                        </div>
+                                    </div>
+                                    <div class="product-title">
+                                        <a href="#">КОСТЮМ НИНДЗЯ</a>
+                                        <span class="product-price">₽599.00</span>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><!--Ячейки продуктов -->
+                        <div class="product-wrap">
+                            <div class="product-item">
+                                <img src="images/image-product/product12.png">
+                                <div class="product-buttons">
+                                    <a href="#" class="button">В корзину</a>
+                                </div>
+                            </div>
+                            <div class="product-title">
+                                <a href="#">костюм русалочка</a>
+                                <span class="product-price">₽880.00</span>
+                            </div>
+                        </div>
+                    </td>
+                            <td><!--Ячейки продуктов -->
+                        <div class="product-wrap">
+                            <div class="product-item">
+                                <img src="images/image-product/product13.png">
+                                <div class="product-buttons">
+                                    <a href="#" class="button">В корзину</a>
+                                </div>
+                            </div>
+                            <div class="product-title">
+                                <a href="#">Костюм мухоморчик </a>
+                                <span class="product-price">₽795.00</span>
+                            </div>
+                        </div>
+                    </td>
+                            <td><!--Ячейки продуктов -->
+                        <div class="product-wrap">
+                            <div class="product-item">
+                                <img src="images/image-product/product14.png">
+                                <div class="product-buttons">
+                                    <a href="#" class="button">В корзину</a>
+                                </div>
+                            </div>
+                            <div class="product-title">
+                                <a href="#">КОСТЮМ КОШЕЧКА</a>
+                                <span class="product-price">₽599.00</span>
+                            </div>
+                        </div>
+                    </td>
+                        </tr>
+                    </table>
+                    <div class="product-str"> <p>
+                        <a>1&nbsp;</a><a>2&nbsp;</a><a>3&nbsp;</a><a>4&nbsp;</a><a>5&nbsp;</a><a>6&nbsp;</a>..... <a>20</a>
+                        </p> </div>
+                    <button class="product-view" type="submit">Показать все</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Подписка на новости -->
+        <div class="subscribe">
+            <div class="coments-foto"></div>
+            <div class="coments">
+                <p>“Человеку, одаренному воображением, момент приближения праздника всегда сулит чудеса.”
+                    <br>
+                    <b>Никлаус Майклсон</b><br>
+                    <b id="coments-min">"Сестра Керри"</b>
+                </p>
+            </div>
+            <div class="poisk-subscribe">
+                <p>ПОДПИСКА</p>
+                <p id="poisk-subscribe-com">ДЛЯ НАШЕЙ РАССЫЛКИ И ПРОДВИЖЕНИЯ</p>
+                <div class="poisk-subscribe-form">
+                    <form>
+                        <input type="email" placeholder="Введите свой Email">
+                        <button type="email">Подписаться</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="logo-copy"></div>
+            <p id="footer-text">Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of processes and cross-unit partnerships.<br><br>
+            Efficiently plagiarize 24/365 action items and focused infomediaries. Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.
+            </p>
+            
+            <div class="footer-menu">
+                <div class="footer-menu-colon">
+                    <ul class="footer-submenu">
+                        <li><a href="#" class="footer-submenu-b">КОМПАНИЯ</a></li>
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">Магазин</a></li>
+                        <li><a href="#">Вокруг</a></li>
+                        <li><a href="#">Как это работает</a></li>
+                        <li><a href="#">Контакты</a></li>        
+                    </ul>
+                </div>
+                <div class="footer-menu-colon">
+                    <ul class="footer-submenu">
+                        <li><a href="#" class="footer-submenu-b">ИНФОРМАЦИЯ</a></li>
+                        <li><a href="#">Сроки & Условия</a></li>
+                        <li><a href="#">Конфиденциальность</a></li>
+                        <li><a href="#">Как купить</a></li>
+                       <li><a href="#">Как продать</a></li>
+                        <li><a href="#">Продвижение</a></li>        
+                    </ul>
+                </div>
+                <div class="footer-menu-colon">
+                    <ul class="footer-submenu">
+                        <li><a href="#" class="footer-submenu-b">КАТЕГОРИИ</a></li>
+                        <li><a href="product.html">Праздники</a></li>
+                        <li><a href="product.html">Вечеринки</a></li>
+                        <li><a href="product.html">День рождения</a></li>
+                        <li><a href="product.html">Шарики</a></li>
+                        <li><a href="product.html">Аниматоры</a></li>        
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-end"><p>© 2018 Все права защищены. By FADY KH</p>
+                <div class="footer-icon">
+                    <a href="#" id="footer-icon1"></a>
+                    <a href="#" id="footer-icon2"></a>
+                    <a href="#" id="footer-icon3"></a>
+                    <a href="#" id="footer-icon4"></a>
+                    <a href="#" id="footer-icon5"></a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

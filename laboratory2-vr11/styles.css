@@ -719,8 +719,9 @@ menu{
   overflow: hidden;
 }
 .product-wrap img {
-  display: block;
-  width: 100%;
+    display: block;
+    width: 100%;
+    transition-duration: 1s;
 }
 .product-buttons {
   position: absolute;
@@ -752,6 +753,7 @@ menu{
   margin-right: 10px;
 }
 .product-item:hover .product-buttons {opacity: 1;}
+.product-item:hover .img-item { transform: scaleX(-1); }
 .product-item:hover .button {transform: translate(-50%, -50%) scale(1);}
 .button:hover {background: black;}
 .product-title {color: #000000;}
