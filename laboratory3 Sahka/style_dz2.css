@@ -1,74 +1,52 @@
-@import url(http://fonts.googleapis.com/css?family=Capriola);
-#cssmenu ul {
-	position: absolute;
-	top: 5%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	margin: 0;
-	padding: 0;
-	display: flex;
+.menu {
+    position: absolute;
+  z-index: 999;
+    top: 25%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
-#cssmenu,
-#cssmenu ul,
-#cssmenu ul li,
-#cssmenu ul li a {
-    margin: 0 auto;
-    line-height: 1;
-    font-family: 'Capriola', sans-serif;
+.menu__link {
+  display: inline-block;
+  color: #2d6c90;
+  text-decoration: none;
+  position: relative;
+  padding: 14px 0;
+  font-family: 'Muli', sans-serif;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 1;
+  letter-spacing: 0.040em;
 }
-#cssmenu:before,
-#cssmenu:after,
-#cssmenu > ul:before,
-#cssmenu > ul:after {
-    content: '';
-    display: table;
+
+.menu__link svg {
+  fill: none;
+  stroke: #70aec9;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+  stroke-dasharray: 338;
+  stroke-dashoffset: 338;
+  stroke-linecap: round;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: calc(100% + 60px);
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: stroke-dashoffset 0s 0.2s, opacity 0.2s;
+  z-index: -1;
 }
-#cssmenu:after,
-#cssmenu > ul:after {
-    clear: both;
+
+.menu__link--active svg {
+  stroke: #ff4c4c;
 }
-#cssmenu {
-    zoom: 1;
-    height: 69px;
-    background: url(images/bottom-bg.png) repeat-x center bottom;
-    border-radius: 2px;
-    width: auto;
-}
-#cssmenu ul {
-    background: url(images/nav-bg.png) repeat-x 0px 4px;
-    height: 69px;
-}
-#cssmenu ul li {
-    float: left;
-    list-style: none;
-}
-#cssmenu ul li a {
-    display: block;
-    height: 37px;
-    padding: 22px 30px 0;
-    margin: 4px 2px 0;
-    border-radius: 2px 2px 0 0;
-    text-decoration: none;
-    font-size: 15px;
-    color: white;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.75);
-    font-weight: 400;
-    opacity: .9;
-}
-#cssmenu ul li:first-child a {
-    margin: 4px 2px 0 0;
-}
-#cssmenu ul li a:hover,
-#cssmenu ul li.active a {
-    background: url(images/color.png) center bottom;
-    display: block;
-    height: 37px;
-    margin-top: 0px;
-    padding-top: 26px;
-    color: #004f7c;
-    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.55);
-    opacity: 1;
+
+.menu__link--active svg,
+.menu__link:hover svg {
+  stroke-dashoffset: 0;
+  opacity: 1;
+  transition: opacity 0s, stroke-dashoffset 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 .cuadro{
