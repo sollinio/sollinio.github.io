@@ -1,8 +1,4 @@
-@font-face{
-    font-family:Capriola;
-    src:url(css/Capriola-Regular.ttf);
-}
-
+@import url(http://fonts.googleapis.com/css?family=Capriola);
 #cssmenu ul {
 	position: absolute;
 	top: 5%;
