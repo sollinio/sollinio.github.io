@@ -68,10 +68,11 @@ a {
 }
 
 
+
 body{
+    height: 1600px;
     background-color: #fff;
 }
-
 
 header{
     padding-top: 25px;
@@ -115,7 +116,6 @@ header{
     }
 }
 
-
 .hr-body{
     margin: 0 auto;
     border: 1px solid #f1f1f1;
@@ -128,14 +128,15 @@ header{
     height: 70px;
 }
 
+/*Картинка логотипа*/
 #logo{
-        margin-left: 15px;
-        margin-right: 30px;
-        height: 70px;
-        width: 165px;
-        background-image: url(images/logo.png);
-        background-repeat: no-repeat;
-        float: left;  /* Обтекание  */
+    margin-left: 15px;
+    margin-right: 30px;
+    height: 70px;
+    width: 165px;
+    background-image: url(images/logo.png);
+    background-repeat: no-repeat;
+    float: left;  /* Обтекание  */
 }
 
 /*ЛОГОТИП 2000px - 768*/
@@ -163,6 +164,7 @@ header{
         background-repeat:no-repeat;
     }
 }
+
 
 /*Кнопка для поиска*/
 #poisk
@@ -205,7 +207,7 @@ header{
     padding: 15px 15px 10px 20px;
 }
 .poisk-topmenu li a:hover { 
-    color: #7d71ef;
+    color: #49affa;
 }
 .poisk-menu-link{
     color: #222222;
@@ -269,7 +271,6 @@ header{
     opacity: 1;
     transform: scaleY(1);
 }
-
 
 /*Поле для поиска*/
 .poisk-form{
@@ -436,7 +437,7 @@ header{
     padding: 12px 10px 0px 0px;
 }
 .korzina-topmenu li a:hover { 
-    color: #7d71ef;
+    color: #49affa;
 }
 .korzina-link{
     color: #222222;
@@ -444,20 +445,22 @@ header{
 }
 .korzina-link:after{
     position: absolute;
-    content: "3";
-    color: #ffffff;
-     left: 243%;
-     margin-top: 12px;
-    font-size: 12px;
+    content: "2";
+    color: #fff;
+    left: 243%;
+    margin-top: 16px;
+    margin-left: -13px;
+    font-size: 13px;
 }
 .korzina-link:before {
     font-size: 17px;
     position: absolute;
     left: 200%;
-    color: #7d71ef;
+    color: #49affa;
     content: "\f111";
     font-family: "FontAwesome";
-    margin-top: 10px;
+    margin-top: 15px;
+    margin-left: -12px;
 }
 
 /*Треугольничек*/
@@ -514,7 +517,7 @@ header{
     font-family: Lato-Regular;
     margin-top: -10px;
     font-size: 13px;
-    color: #7d71ef;
+    color: #49affa;
 }
 
 /*Закрыть корзину*/
@@ -523,7 +526,7 @@ header{
     float: right;
     width: 15px;
     height: 15px;
-    background: #c0c0c0;
+    background: #49affa;
     border: 1px solid #e6e6e6;
     border-radius: 50px 50px;
     cursor: pointer;
@@ -583,9 +586,9 @@ header{
     font-family: Lato-Bold;
     font-size: 15px;
     text-transform:uppercase;
-    color: #7d71ef;
+    color: #49affa;
     background-color: #fff;
-    border: 2px solid #7d71ef;
+    border: 2px solid #49affa;
     cursor: pointer;
 }
 
@@ -609,12 +612,13 @@ header{
 }
 
 .korzina-GoToCart:hover{
-    color: #7d71ef;
-    border: 2px solid #7d71ef;
+    color: #49affa;
+    border: 2px solid #49affa;
 }
 
+/*Мой аккаунт меню*/
 #myakk{
-    background-color: #7d71ef;
+    background-color: #49affa;
     display:block;
     height: 40px;
     width: 150px;
@@ -623,32 +627,19 @@ header{
     float:right;  /* Обтекание */
 }
 
-#myakk{
-    background-color: #7d71ef;
-    display:block;
-    height: 40px;
-    width: 150px;
-    padding: 0px 25px;
-    margin-right: 4px;
-    margin-top: 6px;
-    margin-left: 11px;
-    float:l;  /* Обтекание */
-}
-
 /*МОЙ АККАУНТ 768-0 px*/
 @media screen and (min-width: 0px) and (max-width: 767px){
 /*Мой аккаунт меню*/
     #myakk{
-        background-color: #7d71ef;
+        background-color: #49affa;
         display:block;
         height: 40px;
         width: 150px;
-        padding: 0px 25px;
-        margin-right: 4px;
-        margin-top: 6px;
-        margin-left: 11px;
+        padding: 0px 10px;
+        margin-right: 27px;    
     }
 }
+
 #myakk a{
     text-decoration: none;
     outline: none;
@@ -809,11 +800,13 @@ menu{
     }
 }
 
+
 /*При наведении на меню*/
 .menu-main a:hover {
-    color: #7d71ef;
+    color: #49affa;
 }
 
+/*Слайдер*/
 .slider{
     margin: 0px auto;
     height: 633px;
@@ -831,9 +824,10 @@ menu{
         width: 1140px;
         background-image:url(images/slider.png);
         background-repeat: no-repeat;
-        background-position: right;
+        background-position: center;
     }
 }
+
 /*СЛАЙДЕР 1140 - 1024px*/
 @media screen and (min-width: 1024px) and (max-width: 1139px){ 
     /*Слайдер*/
@@ -843,7 +837,7 @@ menu{
         width: 1000px;
         background-image:url(images/slider.png);
         background-repeat: no-repeat;
-        background-position: right;
+        background-position: left;
     }
 }
 /*СЛАЙДЕР 1024 - 768px*/
@@ -855,7 +849,7 @@ menu{
         width: 768px;
         background-image:url(images/slider.png);
         background-repeat: no-repeat;
-        background-position: right;
+        background-position: left;
     }
 }
 
@@ -891,7 +885,7 @@ menu{
 
 .category b{
     font-size: 30px;
-    color: #7d71ef;
+    color: #49affa;
 }
 
 #banner1{
@@ -901,7 +895,10 @@ menu{
     background-image: url(images/banner-1.png);
     background-repeat: no-repeat;
     padding-bottom: 35px;
-    transition: 2s ease-in-out; /*плавная трансформация*/
+   -webkit-transform: rotate(0deg); /*изначальная транформация*/
+    transform: rotate(0deg));
+    -webkit-transition:all 1000ms;  /*скорость трансформации*/
+    transition:all 1000ms;  
 }
 
 #banner2{
@@ -911,7 +908,7 @@ menu{
     background-image: url(images/banner-2.png);
     background-repeat: no-repeat;
     padding-bottom: 35px;
-     transition: 2s ease-in-out; /*плавная трансформация*/
+    transition: 2s ease-in-out; /*плавная трансформация*/
 }
 
 #banner3{
@@ -921,7 +918,10 @@ menu{
     background-image: url(images/banner-3.png);
     background-repeat: no-repeat;
     padding-bottom: 35px;
-    transition: 2s ease-in-out; /*плавная трансформация*/
+   -webkit-transform: rotate(0deg); /*изначальная транформация*/
+    transform: rotate(0deg));
+    -webkit-transition:all 1000ms;  /*скорость трансформации*/
+    transition:all 1000ms;  
 }
 
 #banner4{
@@ -931,24 +931,30 @@ menu{
     background-image: url(images/banner-4.png);
     background-repeat: no-repeat;
     padding-bottom: 35px;
-    transition-duration: 5s;
-    transition-timing-function: cubic-bezier(.1, -1.5, .1, 2.5); 
-    transition-duration: 5s;
-    /*плавная трансформация*/
+    transition-timing-function: cubic-bezier(.1, -1.5, .1, 2.5);  /*функция трансформации*/
+    transition-duration: 5s; /*плавная трансформация*/
 }
 
 /*увеличение изображения при наведении*/
-#banner1:hover { transform: scale(1.1); }
+#banner1:hover { 
+    -webkit-transform: rotate(-360deg);
+    -transform: rotate(-360deg));  }
 #banner2:hover { transform: scale(1.1); }
-#banner3:hover { transform: scale(1.1); }
+#banner3:hover {
+    -webkit-transform: rotate(360deg);
+    -transform: rotate(360deg)); 
+}
 #banner4:hover { transform: scale(1.1); }
 
 /*КАТЕГОРИЯ 320 px*/
 @media screen and (min-width: 0px) and (max-width: 767px){
+    
+    /*Категории*/
     .category{
         margin: 0 auto;
         width: 320px;
     }
+
     .category a{
         line-height: 30px;
         text-align: left;
@@ -960,22 +966,25 @@ menu{
         font-size: 14px;
         background-color: #fff;
     }
+
     .category b{
         font-size: 30px;
-        color: #7d71ef;
+        color: #49affa;
     }
-    
+
     #banner1{
         height: 200px;
         width: 320px;
         background-image: url(images/banner-1.png);
         background-repeat: no-repeat;
-        background-position: bottom;
+        background-position:left;
         padding-bottom: 35px;
-        transition: 2s ease-in-out; /*плавная трансформация*/
-        margin-bottom: 10px;
+       -webkit-transform: rotate(0deg); /*изначальная транформация*/
+        transform: rotate(0deg));
+        -webkit-transition:all 1000ms;  /*скорость трансформации*/
+        transition:all 1000ms;  
     }
-    
+
     #banner2{
         height: 200px;
         width: 320px;
@@ -984,36 +993,38 @@ menu{
         background-position: right;
         padding-bottom: 35px;
         transition: 2s ease-in-out; /*плавная трансформация*/
-        margin-bottom: 10px;
     }
-    
+
     #banner3{
+        float: right;
         height: 300px;
         width: 320px;
         background-image: url(images/banner-3.png);
         background-repeat: no-repeat;
         padding-bottom: 35px;
-        transition: 2s ease-in-out; /*плавная трансформация*/
-        margin-bottom: 10px;
+       -webkit-transform: rotate(0deg); /*изначальная транформация*/
+        transform: rotate(0deg));
+        -webkit-transition:all 1000ms;  /*скорость трансформации*/
+        transition:all 1000ms;  
     }
-    
+
     #banner4{
+        float: left;
         height: 200px;
         width: 320px;
         background-image: url(images/banner-4.png);
         background-repeat: no-repeat;
         background-position: center;
         padding-bottom: 35px;
-        transition-duration: 5s;
-        transition-timing-function: cubic-bezier(.1, -1.5, .1, 2.5); 
+        transition-timing-function: cubic-bezier(.1, -1.5, .1, 2.5);  /*функция трансформации*/
         transition-duration: 5s; /*плавная трансформация*/
-        margin-bottom: 10px;
     }
-
 }
 
 /*КАТЕГОРИЯ 768 px*/
 @media screen and (min-width: 768px) and (max-width: 1023px){
+    
+        /*Категории*/
     .category{
         margin: 0 auto;
         margin-top:10px;
@@ -1035,19 +1046,23 @@ menu{
 
     .category b{
         font-size: 30px;
-        color: #7d71ef;
+        color: #49affa;
     }
-    
+
     #banner1{
         float: left;
         height: 542px;
         width: 400px;
         background-image: url(images/banner-1.png);
         background-repeat: no-repeat;
-        background-position: right;
-        transition: 2s ease-in-out; /*плавная трансформация*/
+        background-position:left;
+        padding-bottom: 35px;
+       -webkit-transform: rotate(0deg); /*изначальная транформация*/
+        transform: rotate(0deg));
+        -webkit-transition:all 1000ms;  /*скорость трансформации*/
+        transition:all 1000ms;  
     }
-    
+
     #banner2{
         margin-top: 18px;
         margin-left: 15px;
@@ -1056,10 +1071,11 @@ menu{
         width: 352px;
         background-image: url(images/banner-2.png);
         background-repeat: no-repeat;
+        background-position: right;
         padding-bottom: 35px;
-         transition: 2s ease-in-out; /*плавная трансформация*/
+        transition: 2s ease-in-out; /*плавная трансформация*/
     }
-    
+
     #banner3{
         float: right;
         height: 500px;
@@ -1067,20 +1083,22 @@ menu{
         background-image: url(images/banner-3.png);
         background-repeat: no-repeat;
         padding-bottom: 35px;
-        transition: 2s ease-in-out; /*плавная трансформация*/
+       -webkit-transform: rotate(0deg); /*изначальная транформация*/
+        transform: rotate(0deg));
+        -webkit-transition:all 1000ms;  /*скорость трансформации*/
+        transition:all 1000ms;  
     }
-    
+
     #banner4{
         float: left;
         height: 270px;
         width: 405px;
         background-image: url(images/banner-4.png);
         background-repeat: no-repeat;
+        background-position: center;
         padding-bottom: 35px;
-        transition-duration: 5s;
-        transition-timing-function: cubic-bezier(.1, -1.5, .1, 2.5); 
-        transition-duration: 5s;
-        /*плавная трансформация*/
+        transition-timing-function: cubic-bezier(.1, -1.5, .1, 2.5);  /*функция трансформации*/
+        transition-duration: 5s; /*плавная трансформация*/
     }
 }
 
@@ -1108,7 +1126,7 @@ menu{
 
     .category b{
         font-size: 30px;
-        color: #7d71ef;
+        color: #49affa;
     }
 
     #banner1{
@@ -1118,7 +1136,10 @@ menu{
         background-image: url(images/banner-1.png);
         background-repeat: no-repeat;
         padding-bottom: 35px;
-        transition: 2s ease-in-out; /*плавная трансформация*/
+       -webkit-transform: rotate(0deg); /*изначальная транформация*/
+        transform: rotate(0deg));
+        -webkit-transition:all 1000ms;  /*скорость трансформации*/
+        transition:all 1000ms;  
     }
 
     #banner2{
@@ -1129,7 +1150,7 @@ menu{
         background-image: url(images/banner-2.png);
         background-repeat: no-repeat;
         padding-bottom: 35px;
-         transition: 2s ease-in-out; /*плавная трансформация*/
+        transition: 2s ease-in-out; /*плавная трансформация*/
     }
 
     #banner3{
@@ -1140,7 +1161,10 @@ menu{
         background-image: url(images/banner-3.png);
         background-repeat: no-repeat;
         padding-bottom: 35px;
-        transition: 2s ease-in-out; /*плавная трансформация*/
+       -webkit-transform: rotate(0deg); /*изначальная транформация*/
+        transform: rotate(0deg));
+        -webkit-transition:all 1000ms;  /*скорость трансформации*/
+        transition:all 1000ms;  
     }
 
     #banner4{
@@ -1150,10 +1174,8 @@ menu{
         background-image: url(images/banner-4.png);
         background-repeat: no-repeat;
         padding-bottom: 35px;
-        transition-duration: 5s;
-        transition-timing-function: cubic-bezier(.1, -1.5, .1, 2.5); 
-        transition-duration: 5s;
-        /*плавная трансформация*/
+        transition-timing-function: cubic-bezier(.1, -1.5, .1, 2.5);  /*функция трансформации*/
+        transition-duration: 5s; /*плавная трансформация*/
     }
 }
 
@@ -1185,6 +1207,7 @@ menu{
 
 /*ПРОДУКЦИЯ ТЕКСТ 1024px*/
 @media screen and (min-width: 1024px) and (max-width: 1139px){ 
+    /*Продукция*/
     .product{
         box-sizing: border-box;
         text-align: center;
@@ -1205,16 +1228,18 @@ menu{
     }
 
     .product-text p{
+        width: 1024px;
         color: #9f9f9f;
         font-weight:normal;
-        width: 1024px;
         font-size: 15px;
         font-family:Lato-Regular;
     }
+
 }
 
 /*ПРОДУКЦИЯ ТЕКСТ 768px*/
 @media screen and (min-width: 768px) and (max-width: 1023px){ 
+        /*Продукция*/
     .product{
         box-sizing: border-box;
         text-align: center;
@@ -1231,15 +1256,17 @@ menu{
         font-size: 30px;
         font-weight: bold;
         font-family:Lato-Bold;
+
     }
 
     .product-text p{
+        width: 768px;
         color: #9f9f9f;
         font-weight:normal;
-        width: 768px;
         font-size: 15px;
         font-family:Lato-Regular;
     }
+
 }
 
 /*ПРОДУКЦИЯ ТЕКСТ 320px*/
@@ -1250,6 +1277,7 @@ menu{
     }
 }
 
+
 /*Иконки продукта*/
 .product-wrap {
     margin: 0 auto; 
@@ -1259,33 +1287,34 @@ menu{
     text-align: center;
     font-size: 14px; 
     font-family: Lora;
-    text-transform: uppercase;
+    text-transform: uppercase; 
 }
+
 .product-item{
-    
   position: relative;
   overflow: hidden;
 }
 .product-wrap img {
     display: block;
     width: 100%;
-    transition-duration: 1s;
 }
+
 .product-buttons {
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, .8);
+  background: rgba(73, 175, 250, 0.75);
   opacity: 0;
   transition: .3s ease-in-out;
 }
 
 /*ИКОНКИ ПРОДУКЦИИ 1024px*/
 @media screen and (min-width: 1024px) and (max-width: 1139px){ 
+    /*Иконки продукта*/
     .product-wrap {
-        width: 210px;
+         width: 210px;
         margin: 0 auto; 
         margin: 0 10px 25px 0px;
         background: white;
@@ -1293,7 +1322,7 @@ menu{
         text-align: center;
         font-size: 14px; 
         font-family: Lora;
-        text-transform: uppercase;
+        text-transform: uppercase; 
     }
 }
 
@@ -1308,7 +1337,7 @@ menu{
         text-align: center;
         font-size: 14px; 
         font-family: Lora;
-        text-transform: uppercase;
+        text-transform: uppercase; 
     }
 }
 
@@ -1341,9 +1370,8 @@ menu{
   margin-right: 10px;
 }
 .product-item:hover .product-buttons {opacity: 1;}
-.product-item:hover .img-item { transform: scaleX(-1); }
-.product-item:hover .button {transform: translate(-50%, -50%) scale(1);}
-.button:hover {background: black;}
+.product-item:hover .button {transform: translate(-50%, -50%) scale(1); }
+.button:hover {background: #49affa;}
 .product-title {color: #000000;}
 .product-title a {
     text-decoration: none;
@@ -1355,11 +1383,11 @@ menu{
     position: relative;
     transition: .3s ease-in-out;
 }
-.product-title a:hover {color: #7d71ef;}
+.product-title a:hover {color: #49affa;}
 .product-wrap:hover {box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22); }
 .product-price {
     font-size: 20px;
-    color: #7d71ef;
+    color: #49affa;
     font-weight: 700;
 }
 
@@ -1372,7 +1400,7 @@ menu{
     font-size: 18px;
     width: 255px;
     height: 50px;
-    background-color: #7d71ef;
+    background-color: #49affa;
     font-family:Lato-Regular;
     margin-bottom: 100px;
 }
@@ -1398,7 +1426,7 @@ menu{
         font-size: 18px;
         width: 255px;
         height: 50px;
-        background-color: #7d71ef;
+        background-color: #49affa;
         font-family:Lato-Regular;
         margin-bottom: 30px;
         margin-left: auto;
@@ -1415,7 +1443,7 @@ menu{
         font-size: 18px;
         width: 255px;
         height: 50px;
-        background-color: #7d71ef;
+        background-color: #49affa;
         font-family:Lato-Regular;
         margin-bottom: 30px;
         margin-left: 250px;
@@ -1429,7 +1457,6 @@ menu{
         height: 0px;
     }
 }
-
 
 /*Блок особенностей*/
 .feature{
@@ -1473,22 +1500,22 @@ menu{
 
 .feature-right h2:before {
     margin: 0px 25px 0px -65px;
-    color: #7d71ef;
+    color: #49affa;
     font-size: 40px;
 }
 #feature1:before{
-    content: "\f0d1";
+    content: "\f135";
     font-family: "FontAwesome";
     font-style: Light;
 }
 
 #feature2:before{
-    content: "\f295";
+    content: "\f0d6";
     font-family: "FontAwesome";
 }
 
 #feature3:before{
-    content: "\f006";
+    content: "\f164";
     font-family: "FontAwesome";
 }
 
@@ -1534,7 +1561,7 @@ menu{
     .feature-lefr{
         float:left;
         background-image: url(images/feature.png);
-        background-position: center;
+         background-position: center;
         background-repeat: no-repeat;
         height: 500px;
         width: 456px;
@@ -1572,7 +1599,6 @@ menu{
     }
 }
 
-
 /*Блок подписка*/
 .subscribe{
     margin: 0 auto;
@@ -1602,7 +1628,7 @@ menu{
 .coments b{
     float: left;
     margin-top: 10px;
-    color: #7d71ef;
+    color: #49affa;
     font-style: normal;
     font-size: 16px;
 }
@@ -1665,7 +1691,7 @@ menu{
     width: 100px;
     height: 48px;
     border: none;
-    background: #7d71ef;
+    background: #49affa;
     border-radius: 0 50px 50px  0;
     cursor: pointer;
 }
@@ -1680,6 +1706,7 @@ menu{
         background-image: url(images/subscribe.png);
     }
 }
+
 
 /*БЛОК ПОДПИСКА 1024*/
 @media screen and (min-width: 1024px) and (max-width: 1439px){
@@ -1701,9 +1728,9 @@ menu{
 
     .coments{
         font-family:Lato-Regular;
-        margin: 100px 0 0 30px;
+        margin: 121px 0 0 30px;
         float: left;
-        width: 200px;
+        width: 400px;
         line-height: 25px;
         font-style: italic;
         font-size: 17px;
@@ -1712,7 +1739,7 @@ menu{
     .coments b{
         float: left;
         margin-top: 10px;
-        color: #7d71ef;
+        color: #49affa;
         font-style: normal;
         font-size: 16px;
     }
@@ -1729,7 +1756,7 @@ menu{
         float: left;
         margin-top: -150px;
         margin-left: 600px;
-         text-align: center;
+        text-align: center;
         font-size: 25px;
         float: left;
         width: 400px;
@@ -1742,14 +1769,14 @@ menu{
 @media screen and (min-width: 768px) and (max-width: 1023px){
     /*Блок подписка*/
     .subscribe{
-        margin: 0 auto;
+       margin: 0 auto;
         width: 768px;
         height: 438px;
         background-image: url(images/subscribe.png);
     }
 
     .coments-foto{
-        margin: 200px 0 0 20px;
+        margin: 100px 0 0 20px;
         float: left;
         height: 83px;
         width: 83px;
@@ -1758,8 +1785,7 @@ menu{
 
     .coments{
         font-family:Lato-Regular;
-        margin: 200px 0 0 30px;
-        color: #fff;
+        margin: 100px 0 0 30px;
         float: left;
         width: 200px;
         line-height: 25px;
@@ -1770,10 +1796,9 @@ menu{
     .coments b{
         float: left;
         margin-top: 10px;
-        color: #7d71ef;
+        color: #49affa;
         font-style: normal;
         font-size: 16px;
-        color: #fff;
     }
     #coments-min {
         float: inherit;
@@ -1788,7 +1813,7 @@ menu{
         float: left;
         margin-top: -250px;
         margin-left: 350px;
-         text-align: center;
+        text-align: center;
         font-size: 25px;
         float: left;
         width: 400px;
@@ -1801,25 +1826,26 @@ menu{
 @media screen and (min-width: 320px) and (max-width: 767px){
     /*Блок подписка*/
     .subscribe{
-        margin: 0 auto;
+       margin: 0 auto;
         width: 320px;
         height: 340px;
         background-image: url(images/subscribe.png);
         background-repeat: no-repeat;
-        background-position: right;
+        background-position: center;
     }
+
     .coments-foto{
         width: 0px;
     }
 
     .coments{
         font-family:Lato-Regular;
-        color: #fff;
+        margin: 200px 0 0 30px;
         float: left;
         width: 200px;
         line-height: 25px;
         font-style: italic;
-        font-size: 17px;
+        font-size: 10px;
         margin-left: -150px;
         margin-top: 10px;
     }
@@ -1827,33 +1853,34 @@ menu{
     .coments b{
         float: left;
         margin-top: 10px;
-        color: #7d71ef;
+        color: #49affa;
         font-style: normal;
-        font-size: 16px;
-        color: #fff;
+        font-size: 10px;
     }
     #coments-min {
         float: inherit;
         margin-left: -77px;
         color: #222224;
         font-style: normal;
-        font-size: 12px;
+        font-size: 10px;
     }
 
     /*Эмеил на подписку*/
     .poisk-subscribe{
         float: left;
         text-align: center;
-        font-size: 20px;
+        font-size: 15px;
         width: 320px;
         line-height: 30px;
         font-weight:500;
         margin-left: -280px;
         margin-top: 170px;
     }
+    
     #poisk-subscribe-com{
     font-size: 12px;
-    }
+}
+
     /*Поле для поиска*/
     .poisk-subscribe-form{
         float: left;
@@ -1863,12 +1890,12 @@ menu{
     .poisk-subscribe-form form{
         font-family:Lato-Regular;
         position: relative;
-        width: 250px;
+        width: 311px;
     }
 
     .poisk-subscribe-form form input {
         font-weight: bold;
-        width: 100%;
+        width: 250px;
         height: 44px;
         padding-left: 20px;
         border: 1px solid #e6e6e6;
@@ -1889,7 +1916,7 @@ menu{
         width: 100px;
         height: 48px;
         border: none;
-        background: #7d71ef;
+        background: #49affa;
         border-radius: 0 50px 50px  0;
         cursor: pointer;
     }
@@ -1956,6 +1983,7 @@ footer{
     margin: -58px 0 0 60px;
     float: left;
     width: 650px;
+    
 }
 
 footer a{
@@ -1973,13 +2001,13 @@ footer a{
     font-size: 18px;
 }
 .footer-submenu li a:hover{
-    color: #7d71ef;
+    color: #49affa;
 }
 
 .footer-submenu-b{
     padding-bottom: 10px;
     font-family:Lato-Bold;
-    color: #7d71ef;
+    color: #49affa;
     font-size: 18px;
     font-weight: bold;
 }
@@ -2019,14 +2047,14 @@ footer a{
 
     #footer-text{
         float: left;
-        padding-left: 20px;
+        padding-left: 10px;
         color: #898989;
         font-family:Lato-Light;
         width: 190px;
         font-size: 14px;
         line-height: 30px;
     }
-    
+        
     /*Навигация-меню подвала*/
     .footer-menu{
         font-family:Lato-Regular;
@@ -2056,17 +2084,18 @@ footer a{
         font-size: 14px;
         line-height: 15px;
     }
-    
+
     /*Навигация-меню подвала*/
     .footer-menu{
         text-align: center;
         font-family:Lato-Regular;
         margin: 10px 0 0 10px;
-         margin-left: 60px;
+        margin-left: 60px;
         float: left;
         width: 200px;
+
     }
-    
+
     .footer-menu-colon{
         margin-right: 12px;
         float: left;
@@ -2078,17 +2107,18 @@ footer a{
         font-size: 12px;
     }
     .footer-submenu li a:hover{
-        color: #7d71ef;
+        color: #49affa;
     }
 
     .footer-submenu-b{
         padding-bottom: 10px;
         font-family:Lato-Bold;
-        color: #7d71ef;
+        color: #49affa;
         font-size: 14px;
         font-weight: bold;
     }
 }
+
 
 /*Полоса в подвале*/
 .footer-end{
@@ -2125,7 +2155,7 @@ footer a{
     content: "\f09a";
     font-family: FontAwesome;
     font-size: 16px;
-    color: #7d71ef;
+    color: #49affa;
     font-size: 20px;
 }
 
@@ -2133,7 +2163,7 @@ footer a{
     content: "\f189";
     font-family: FontAwesome;
     font-size: 16px;
-    color: #7d71ef;
+    color: #49affa;
     font-size: 20px;
 }
 
@@ -2141,7 +2171,7 @@ footer a{
     content: "\f099";
     font-family: FontAwesome;
     font-size: 16px;
-    color: #7d71ef;
+    color: #49affa;
     font-size: 20px;
 }
 
@@ -2149,7 +2179,7 @@ footer a{
     content: "\f16d";
     font-family: FontAwesome;
     font-size: 16px;
-    color: #7d71ef;
+    color: #49affa;
     font-size: 20px;
 }
 
@@ -2157,13 +2187,13 @@ footer a{
     content: "\f0d5";
     font-family: FontAwesome;
     font-size: 16px;
-    color: #7d71ef;
+    color: #49affa;
     font-size: 20px;
 }
 
 /*ПОДВАЛ ПОЛОСА 1024px*/
 @media screen and (min-width: 1024px) and (max-width: 1139px){
-     .footer-end{
+    .footer-end{
         margin-left: -205px;
         margin-top: 65px;
         float:left;
@@ -2181,7 +2211,7 @@ footer a{
         font-size: 16px;
         color: #7a7a7a;
     }
-    
+
     /*Иконки сайтов*/
     .footer-icon{
         margin: 30px 50px 0 0;
@@ -2191,7 +2221,7 @@ footer a{
 
 /*ПОДВАЛ ПОЛОСА 1440px*/
 @media screen and (min-width: 1440px) and (max-width: 2000px){
-     .footer-end{
+    .footer-end{
         margin-left: -205px;
         margin-top: 65px;
         float:left;
@@ -2209,7 +2239,7 @@ footer a{
         font-size: 16px;
         color: #7a7a7a;
     }
-    
+
     /*Иконки сайтов*/
     .footer-icon{
         margin: 30px 50px 0 0;
@@ -2219,7 +2249,7 @@ footer a{
 
 /*ПОДВАЛ ПОЛОСА 768px*/
 @media screen and (min-width: 768px) and (max-width: 1023px){
-     .footer-end{
+    .footer-end{
         margin-left: -205px;
         margin-top: 65px;
         float:left;
@@ -2237,7 +2267,7 @@ footer a{
         font-size: 16px;
         color: #7a7a7a;
     }
-    
+
     /*Иконки сайтов*/
     .footer-icon{
         margin: 30px 50px 0 0;
@@ -2247,7 +2277,7 @@ footer a{
 
 /*ПОДВАЛ ПОЛОСА 320px*/
 @media screen and (min-width: 320px) and (max-width: 767px){
-     .footer-end{
+    .footer-end{
         height: 100px;
         width: 540px;
         background-color: #e6e6e6;
@@ -2262,7 +2292,7 @@ footer a{
         font-size: 10px;
         color: #7a7a7a;
     }
-    
+
     /*Иконки сайтов*/
     .footer-icon{
         margin: 2px 2px 0 0;
@@ -2272,7 +2302,7 @@ footer a{
 .arrivals{
     margin: 0 0 60px 0;
     height: 150px;
-    background-color: #f3f2ff;
+    background-color: rgba(120, 199, 255, 0.85);
 }
 
 .arrivals h2{
@@ -2280,7 +2310,7 @@ footer a{
     margin-left: 400px;
     font-family:Lato-Black;
     font-size: 25px;
-    color: #7d71ef;
+    color: #fff;
 }
 
 .arrivals p{
@@ -2292,7 +2322,7 @@ footer a{
 }
 
 .arrivals b{
-    color: #7d71ef;
+    color: #fff;
 }
 
 /*ТИТУЛКА КАТЕГОРИИ ТОВАРА 1024px*/
@@ -2300,16 +2330,17 @@ footer a{
     .arrivals{
     margin: 0 0 30px 0;
     height: 120px;
-    background-color: #f3f2ff;
+    background-color: rgba(120, 199, 255, 0.85);
     }
+
     .arrivals h2{
         padding-top: 40px;
         margin-left: 100px;
         font-family:Lato-Black;
         font-size: 25px;
-        color: #7d71ef;
+        color: #fff;
     }
-    
+
     .arrivals p{
         float: right;
         margin: -20px 200px; 0 0;
@@ -2319,7 +2350,7 @@ footer a{
     }
 
     .arrivals b{
-        color: #7d71ef;
+        color: #fff;
     }
 }
 
@@ -2328,16 +2359,17 @@ footer a{
     .arrivals{
     margin: 0 0 30px 0;
     height: 120px;
-    background-color: #f3f2ff;
+    background-color: rgba(120, 199, 255, 0.85);
     }
+
     .arrivals h2{
         padding-top: 40px;
         margin-left: 100px;
         font-family:Lato-Black;
         font-size: 25px;
-        color: #7d71ef;
+        color: #fff;
     }
-    
+
     .arrivals p{
         float: right;
         margin: -20px 200px; 0 0;
@@ -2347,7 +2379,7 @@ footer a{
     }
 
     .arrivals b{
-        color: #7d71ef;
+        color: #fff;
     }
 }
 
@@ -2356,25 +2388,25 @@ footer a{
     .arrivals{
     margin: 0 0 20px 0;
     height: 50px;
-    background-color: #f3f2ff;
+    background-color: rgba(120, 199, 255, 0.85);
     }
+
     .arrivals h2{
         padding-top: 20px;
         margin-left: 20px;
         font-family:Lato-Black;
         font-size: 12px;
-        color: #7d71ef;
+        color: #fff;
     }
-    
+
     .arrivals p{
         float: right;
-        margin: -13px 50px; 0 0;
+       margin: -13px 50px; 0 0;
         font-family:Lato-Regular;
         font-size: 10px;
         color: #636363;
     }
 }
-
 
 .checkout-fill{
     margin: 0 auto;
@@ -2406,7 +2438,7 @@ footer a{
 }
 
 .h3-font:before{
-    content: "\f101";
+    content: "\f1b2";
     font-family: FontAwesome;
     font-size: 16px;
     color: #a4a4a4;
@@ -2476,14 +2508,13 @@ footer a{
     width: 358px;
     float: right;
 }
-
 /*НОВЫЙ ЗАКАЗ  768px*/
 @media screen and (min-width: 768px) and (max-width: 1023px){
-        .checkout-right{
-        position:inherit;
-        margin: -325px 360px 0 0;
-        width: 358px;
-        float: right;
+    .checkout-right{
+    position:inherit;
+    margin: -325px 360px 0 0;
+    width: 358px;
+    float: right;
     }
 }
 
@@ -2548,8 +2579,8 @@ footer a{
 }
 
 .formcom-checkout-right button:hover{
-    color: #7d71ef;
-    border: 2px solid #7d71ef;
+    color: #49affa;
+    border: 2px solid #49affa;
 }
 
 #checkout-forgot{
@@ -2561,15 +2592,17 @@ footer a{
 /*НОВЫЙ ЗАКАЗ  320px*/
 @media screen and (min-width: 320px) and (max-width: 767px){
     .checkout-fill{
-        margin: 0 auto;
-        width: 320px;
-    }
+    margin: 0 auto;
+    width: 320px;
+}
+
     .checkout-right{
         position:inherit;
         margin: 2px 0 0 0;
         width: 320px;
         float: left;
     }
+
     #checkout-forgot{
         font-family:Lato-Regular;
         margin-left: 90px;
@@ -2577,7 +2610,7 @@ footer a{
         font-size: 10px;
         color: #222222;
     }
-    
+
     .formcom-checkout-right label {
         width:150px;
         margin-top: 5px;
@@ -2588,7 +2621,7 @@ footer a{
         font-size: 13px;
         text-transform: uppercase;
     }
-    
+
     .formcom-checkout-right input {
         height:44px;
         width:260px;
@@ -2601,7 +2634,7 @@ footer a{
 }
 
 #checkout-forgot:hover{
-      color: #7d71ef;
+      color: #49affa;
 }
 
 .checkout-fileds{
@@ -2692,7 +2725,6 @@ text-align: left;
     }
 }
 
-
 .spoh-li-d{
     font-weight: bold;
     font-size: 16px;
@@ -2713,7 +2745,7 @@ text-align: left;
     margin: 0 auto;
     width: 15px;
     height: 15px;
-    background: #c0c0c0;
+    background: #49affa;
     border: 1px solid #e6e6e6;
     border-radius: 50px 50px;
     cursor: pointer;
@@ -2742,8 +2774,8 @@ text-align: left;
 }
 
 .shopping_cart-clear:hover, .shopping_cart-continue:hover{
-    color: #7d71ef;
-    border: 2px solid #7d71ef;border: 2px solid #7d71ef;
+    color: #49affa;
+    border: 2px solid #49affa;border: 2px solid #49affa;
 }
 
 .shop-center{
@@ -2759,8 +2791,9 @@ text-align: left;
         width: 760px;
         margin-bottom: 20px;
     }
+
     .shopping_cart th {
-        padding: 10px 10px;
+        padding: 10px 20px;
         color: #222222;
         font-size: 14px;
         font-weight: bold;
@@ -2778,7 +2811,7 @@ text-align: left;
         overflow:hidden;
     }
     
-        /*Кнопки шопинга*/
+      /*Кнопки шопинга*/
     .shopping_cart-continue{
         float: right;
     }
@@ -2791,7 +2824,7 @@ text-align: left;
         width: 150px;
         text-align: center;
         font-family: Lato-Bold;
-        font-size: 12px;
+       font-size: 12px;
         text-transform:uppercase;
         color: #4a4a4a;
         border: 2px solid #eaeaea;
@@ -2807,6 +2840,7 @@ text-align: left;
         height: 310px;
     }
 }
+
 
 .shopping_address{
     float: left;
@@ -2877,8 +2911,8 @@ text-align: left;
 }
 
 .shopping_cart_form button:hover{
-    color: #7d71ef;
-    border: 2px solid #7d71ef;
+    color: #49affa;
+    border: 2px solid #49affa;
 }
 
 /*Cкидки*/
@@ -2924,13 +2958,13 @@ text-align: left;
 }
 
 /*АДРЕС ПОКУПОК 768px*/
-@media screen and (min-width: 768px) and (max-width: 1023px){ 
+@media screen and (min-width: 768px) and (max-width: 1023px){
         .shopping_address{
         float: left;
         width: 190px;
     }
-    
-        .shopping_cart_form input {
+
+    .shopping_cart_form input {
         height:44px;
         width:160px;
         border:1px solid #eaeaea;
@@ -2939,8 +2973,8 @@ text-align: left;
         font-size: 15px;
         padding-left: 10px;
     }
-    
-        /*Cкидки*/
+
+    /*Cкидки*/
     .shopping_discount{
         margin-left: 35px;
         float: left;
@@ -2963,7 +2997,7 @@ text-align: left;
         position:relative;
     }
 
-    .shopping_discount p{
+    shopping_discount p{
         font-size: 16px;
     }
 
@@ -2976,7 +3010,6 @@ text-align: left;
         font-size: 15px;
         padding-left: 10px;
     }
-
 }
 
 .shopping_discount button{
@@ -2994,8 +3027,8 @@ text-align: left;
 }
 
 .shopping_discount button:hover{
-    color: #7d71ef;
-    border: 2px solid #7d71ef;
+    color: #49affa;
+    border: 2px solid #49affa;
 }
 
 /*Блок общей суммы*/
@@ -3042,15 +3075,15 @@ text-align: left;
     font-size: 15px;
     text-transform:uppercase;
     color: #fff;
-    background-color: #7d71ef;
-    border: 1px solid #7d71ef;
+    background-color: #49affa;
+    border: 1px solid #49affa;
     cursor: pointer;
 }
 
 .shopping-total button:hover{
-    color: #7d71ef;
+    color: #49affa;
     background-color: #f5f3f3;
-    border: 2px solid #7d71ef;
+    border: 2px solid #49affa;
     
 }
 
@@ -3058,7 +3091,7 @@ text-align: left;
 @media screen and (min-width: 320px) and (max-width: 767px){ 
         .shopping_address{
         float: left;
-        width: 100px;
+       width: 100px;
     }
 
     /*Форма заполнения адреса доставки*/
@@ -3068,13 +3101,16 @@ text-align: left;
         font-family:Lato-Bold;
         text-transform:uppercase;
     }
+
     .shopping_cart_form li{
-        width: 80px;
+       width: 80px;
         margin: 5px 0;
         font-size: 12px;
         position:relative;
     }
-        .shopping_cart_form input {
+
+
+    .shopping_cart_form input {
         height:44px;
         width:100px;
         border:1px solid #eaeaea;
@@ -3083,7 +3119,7 @@ text-align: left;
         font-size: 10px;
         padding-left: 10px;
     }
-    
+
     .shopping_cart_form button{
         margin: 10px 0;
         height: 30px;
@@ -3097,7 +3133,7 @@ text-align: left;
         border: 2px solid #eaeaea;
         cursor: pointer;
     }
-    
+
     /*Cкидки*/
     .shopping_discount{
         margin-left: 35px;
@@ -3121,7 +3157,7 @@ text-align: left;
         position:relative;
     }
 
-    .shopping_discount p{
+    shopping_discount p{
         font-size: 14px;
     }
 
@@ -3134,8 +3170,8 @@ text-align: left;
         font-size: 15px;
         padding-left: 10px;
     }
-    
-        .shopping_discount button{
+
+    .shopping_discount button{
         margin: 5px 0;
         height: 30px;
         width: 140px;
@@ -3148,7 +3184,7 @@ text-align: left;
         border: 2px solid #eaeaea;
         cursor: pointer;
     }
-    
+
     .shopping-total{
         text-transform:uppercase;
         float: left;
@@ -3158,6 +3194,7 @@ text-align: left;
         height: 216px;
         background-color: #f5f3f3;
     }
+
 }
 
 /*ОБЩАЯ ПОКУПКА ПОКУПОК 768px*/
@@ -3171,6 +3208,7 @@ text-align: left;
         background-color: #f5f3f3;
     }
 }
+
 
 /*Cлайдер*/
 .carousel {
@@ -3239,7 +3277,7 @@ text-align: left;
 }
 
 .carousel-control {
-    background: rgba(0, 0, 0, 0.28);
+    background: rgba(73, 175, 250, 0.29);
     border-radius: 50%;
     color: #fff;
     cursor: pointer;
@@ -3267,8 +3305,8 @@ text-align: left;
 }
 
 .carousel-control:hover {
-    background: rgba(0, 0, 0, 0.8);
-    color: #aaaaaa;
+    background: rgba(73, 175, 250, 0.76);
+    color: #fff;
 }
 
 #carousel-1:checked ~ .control-1,
@@ -3308,7 +3346,7 @@ text-align: left;
 #carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
 #carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
 #carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
-    color: #7d71ef;
+    color: #49affa;
 }
 
 #title {
@@ -3346,12 +3384,12 @@ text-align: left;
     font-family:Lato-Regular;
     text-transform:uppercase;
     text-align: center;
-    color: #7d71ef;
+    color: #49affa;
     font-size: 13px;
 }
 
 #single_hr{
-    border: 2px solid #7d71ef;
+    border: 2px solid #49affa;
     border-bottom-width: 0;
     width: 40px;
 }
@@ -3393,17 +3431,16 @@ text-align: left;
 
 .single_div b{
     font-size: 15px;
-    color: #7d71ef;
+    color: #49affa;
 }
 
 .single_sum p{
     margin: 0 auto;
-    color: #7d71ef;
+    color: #49affa;
     font-family:Lato-Bold;
     font-size: 28px;
     margin-bottom: 40px;
 }
-
 
 /*Единичный предложение*/
 .single_page-also{
@@ -3431,14 +3468,15 @@ ul#single-ul li{
         width: 768px;
         box-shadow: 0px 1px 6px #b6b5b8;
     }
-    
+
     .single_div{
         padding-left: 40px;
         width: 715px;
         margin: 0 auto;
     }
+
     #single_table_h1{
-        width: 768px;
+         width: 768px;
         margin: 5px 0 5px 0x;
         font-family:Lato-Black;
         text-align: center;
@@ -3460,7 +3498,6 @@ ul#single-ul li{
         color: #4d4d4d;
     }
 }
-
 
 #single_page_tova_hr{
     width: 610px;
@@ -3506,9 +3543,9 @@ ul#single-ul li{
     font-family: Lato-Bold;
     font-size: 15px;
     text-transform:uppercase;
-    color: #7d71ef;
+    color: #49affa;
     background-color: #fff;
-    border: 2px solid #7d71ef;
+    border: 2px solid #49affa;
     cursor: pointer;
 }
 
@@ -3519,12 +3556,13 @@ ul#single-ul li{
 
 /*О ТОВАР 320px*/
 @media screen and (min-width: 320px) and (max-width: 767px){ 
-    .single_page_tovar{
+        .single_page_tovar{
         height: 730px;
         width: 320px;
         box-shadow: 0px 1px 6px #b6b5b8;
         margin-bottom: 10px;
     }
+
     .single_page_tovar p{
         text-align: center;
         margin: 0 auto;
@@ -3552,26 +3590,26 @@ ul#single-ul li{
 
     .single_div b{
         font-size: 15px;
-        color: #7d71ef;
+        color: #49affa;
     }
 
     .single_sum p{
         margin: 0 auto;
-        color: #7d71ef;
+        color: #49affa;
         font-family:Lato-Bold;
         font-size: 28px;
         margin-bottom: 40px;
     }
     
-    .single_page_form{
+        .single_page_form{
         margin: 0 auto;
         width: 320px;
     }
-    
+
     .single_page_form li{
         float: right;
         text-align: left;
-        margin: 0 5px 0 15px;
+        margin: 0 5px 0 5px;
     }
 
     .single_page_form label{
@@ -3599,9 +3637,9 @@ ul#single-ul li{
         font-family: Lato-Bold;
         font-size: 15px;
         text-transform:uppercase;
-        color: #7d71ef;
+        color: #49affa;
         background-color: #fff;
-        border: 2px solid #7d71ef;
+        border: 2px solid #49affa;
         cursor: pointer;
     }
 
@@ -3611,6 +3649,7 @@ ul#single-ul li{
         border-bottom-width: 0;
         margin-bottom: 30px;
     }
+
 }
 
 /*ЕСЛИ БЛОК МЕНЬШЕ 320px*/
@@ -3625,7 +3664,6 @@ ul#single-ul li{
     width: 1200px;
     
 }
-
 
 /* Каталог список-слева */
 .product-category{
@@ -3650,6 +3688,7 @@ ul#single-ul li{
     }
 }
 
+
 /*Cтили для блока категорий*/
 .cd-accordion-menu input[type=checkbox] {
 	position: absolute;
@@ -3664,10 +3703,10 @@ ul#single-ul li{
     border-bottom: 1px solid #f1f1f1;
     font-family: Lato-Bold;
     text-transform: uppercase;
-	color: #7d71ef;
+	color: #49affa;
     font-size: 17px;
     font-weight: bold;
-    border-left: 5px solid #7d71ef;
+    border-left: 5px solid #49affa;
     text-align: left;
 }
 
@@ -3682,7 +3721,7 @@ ul#single-ul li{
 }
 
 .cd-accordion-menu a:hover {
-	color: #7d71ef;
+	color: #49affa;
     background: #f3f3f3;
 }
 
@@ -3799,7 +3838,7 @@ ul#single-ul li{
     content: "\f053";
     font-family: FontAwesome;
     font-size: 16px;
-    color: #7d71ef;
+    color: #49affa;
 }
 
 .product-str:after {
@@ -3809,11 +3848,11 @@ ul#single-ul li{
     content: "\f054";
     font-family: FontAwesome;
     font-size: 16px;
-    color: #7d71ef;
+    color: #49affa;
 }
 
 .product-str a:hover{
-    color: #7d71ef;
+    color: #49affa;
 }
 
 
@@ -3828,11 +3867,12 @@ ul#single-ul li{
     font-family: Lato-Bold;
     font-size: 15px;
     text-transform:uppercase;
-    color: #7d71ef;
+    color: #49affa;
     background-color: #fff;
-    border: 2px solid #7d71ef;
+    border: 2px solid #49affa;
     cursor: pointer;
     border-radius:5px;
+    
 }
 
 /*КАТАЛОГ ПРОДУКЦИИ 1024*/
@@ -3847,9 +3887,9 @@ ul#single-ul li{
         font-family: Lato-Bold;
         font-size: 15px;
         text-transform:uppercase;
-        color: #7d71ef;
+        color: #49affa;
         background-color: #fff;
-        border: 2px solid #7d71ef;
+        border: 2px solid #49affa;
         cursor: pointer;
         border-radius:5px;
     }
@@ -3867,14 +3907,14 @@ ul#single-ul li{
         font-family: Lato-Bold;
         font-size: 15px;
         text-transform:uppercase;
-        color: #7d71ef;
+        color: #49affa;
         background-color: #fff;
-        border: 2px solid #7d71ef;
+        border: 2px solid #49affa;
         cursor: pointer;
         border-radius:5px;
     }
 }
-    
+
 .product-view:hover{
     color: #4a4a4a;
     border: 2px solid #eaeaea;
@@ -3921,20 +3961,19 @@ ul#single-ul li{
     content: "\f0d1";
     font-family: "FontAwesome";
     font-size: 50px;
-    color: #7d71ef;
+    color: #49affa;
 }
 
 #feature-box-section-h2:before{
     content: "\f295";
     font-family: "FontAwesome";
     font-size: 50px;
-    color: #7d71ef;
+    color: #49affa;
 }
 
 #feature-box-section-h3:before{
     content: "\f006";
     font-family: "FontAwesome";
     font-size: 50px;
-    color: #7d71ef;
+    color: #49affa;
 }
-    
